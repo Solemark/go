@@ -1,9 +1,5 @@
 # Go Meta Repo
 
-get submodule code:
-
-	git submodule update --init --recursive
-
 run code with:
 
     go run name.go
