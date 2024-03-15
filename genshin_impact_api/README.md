@@ -1,1 +1,0 @@
-# genshin_impact_api_go
