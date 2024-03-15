@@ -1,0 +1,84 @@
+{
+    "name": "Cyno",
+    "title": "Judicator of Secrets",
+    "element": "Electro",
+    "weapon": "Polearm",
+    "nation": "Sumeru",
+    "affiliation": "Matra",
+    "rarity": 5,
+    "constellation": "Lupus Aureus",
+    "birthday": "23/06",
+    "description": "As the General Mahamatra, Cyno leads the Matra and strikes fear into the hearts of researchers of the Sumeru Akademiya. In spite of this, Cyno has a fun side outside of his role in the Akademiya, as he has an affinity for Genius Invokation TCG and constantly cracks unfunny jokes.",
+    "ascensionStat": "Crit DMG",
+    "skills": [
+        {
+            "name": "Invoker's Spear",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 4 consecutive spear strikes. Charged Attack: Consumes a certain amount of Stamina to lunge forward, dealing damage to opponents along the way. Plunging Attack: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Secret Rite: Chasmic Soulfarer",
+            "type": "elemental_skill",
+            "description": "Performs a swift thrust, dealing Electro DMG to opponents along the path. When Cyno is under the Pathsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, he will instead unleash a Mortuary Rite that deals thunderous AoE Electro DMG and extends the duration of Pathsworn Pathclearer."
+        },
+        {
+            "name": "Sacred Rite: Wolf's Swiftness",
+            "type": "elemental_burst",
+            "description": "Calls upon a divine spirit to indwell him, morphing into the Pactsworn Pathclearer. Pactsworn Pathclearer Cyno's Normal, Charged, and Plunging Attacks will be converted to Electro DMG that cannot be overridden. Cyno's Elemental Mastery and resistance to interruption will increase, and he gains immunity to Electro-Charged DMG. This effect will be canceled when Cyno leaves the field and lasts a maximum of 18s."
+        }
+    ],
+    "passives": [
+        {
+            "name": "The Gift of Silence",
+            "type": "passive_asc_0",
+            "description": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours."
+        },
+        {
+            "name": "Featherfall Judgment",
+            "type": "passive_asc_1",
+            "description": "When Cyno is in the Pactsworn Pathclearer state activated by Sacred Rite: Wolf's Swiftness, Cyno will enter the Endseer stance at intervals. If he activates Secret Rite: Chasmic Soulfarer while affected by this stance, he will activate the Judication effect, increasing the DMG of this Secret Rite: Chasmic Soulfarer by 35%, and firing off 3 Duststalker Bolts that deal 100% of Cyno's ATK as Electro DMG. Duststalker Bolt DMG is considered Elemental Skill DMG."
+        },
+        {
+            "name": "Authority Over the Nine Bows",
+            "type": "passive_asc_4",
+            "description": "Cyno's DMG values will be increased based on his Elemental Mastery as follows: Pactsworn Pathclearer's Normal Attack DMG is increased by 150% of his Elemental Mastery. Duststalker Bolt DMG from his Passive Talent Featherfall Judgment is increased by 250% of his Elemental Mastery."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Ordinance: Unceasing Vigil",
+            "type": "c1",
+            "description": "After using Sacred Rite: Wolf's Swiftness, Cyno's Normal Attack SPD will be increased by 20% for 10s. If the Judication effect of his Passive Talent Featherfall Judgment is triggered during Secret Rite: Chasmic Soulfarer, the duration of this increase will be refreshed. You need to unlock the Passive Talent 'Featherfall Judgement.'"
+        },
+        {
+            "name": "Ceremony: Homecoming of Spirits",
+            "type": "c2",
+            "description": "When Cyno's Normal Attacks hit opponents, his Electro DMG Bonus will increase by 10% for 4s. This effect can be triggered once every 0.1s. Max 5 stacks."
+        },
+        {
+            "name": "Precept: Lawful Enforcer",
+            "type": "c3",
+            "description": "Increases the Level of Sacred Rite: Wolf's Swiftness by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Austerity: Forbidding Guard",
+            "type": "c4",
+            "description": "When Cyno is in the Pactsworn Pathclearer state triggered by Sacred Rite: Wolf's Swiftness, after he triggers Electro-Charged, Superconduct, Overloaded, Quicken, Aggravate, Hyperbloom, or an Electro Swirl reaction, he will restore 3 Elemental Energy for all nearby party members (except himself). This effect can occur 5 times within one use of Sacred Rite: Wolf's Swiftness."
+        },
+        {
+            "name": "Funerary Rite: The Passing of Starlight",
+            "type": "c5",
+            "description": "Increases the Level of Secret Rite: Chasmic Soulfarer by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Raiment: Just Scales",
+            "type": "c6",
+            "description": "After using Sacred Rite: Wolf's Swiftness or triggering the Judication effect of the Passive Talent 'Featherfall Judgment,'' Cyno will gain 4 stacks of the 'Day of the Jackal' effect. When he hits opponents with Normal Attacks, he will consume 1 stack of 'Day of the Jackal' to fire off one Duststalker Bolt. 'Day of the Jackal' lasts for 8s. Max 8 stacks. It will be canceled once Pactsworn Pathclearer ends. A maximum of 1 Duststalker Bolt can be unleashed this way every 0.4s. You must first unlock the Passive Talent 'Featherfall Judgment.'"
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/5/55/Character_Cyno_Full_Wish.png/revision/latest?cb=20221007135437",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Cyno_Card.png/revision/latest?cb=20220822101647",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/Cyno_Icon.png/revision/latest?cb=20220928023453"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "name": "Fischl",
+    "title": "Prinzessin der Verurteilung!",
+    "element": "Electro",
+    "weapon": "Bow",
+    "nation": "Mondstadt",
+    "affiliation": "Adventurers' Guild",
+    "rarity": 4,
+    "constellation": "Corvus",
+    "birthday": "27/05",
+    "description": "She is an investigator for Mondstadt's Adventurers' Guild, accompanied by the night raven Oz. A daring adventurer with seemingly outlandish theories that happen to turn out to be true, she claims to hail from a world beyond Teyvat.",
+    "ascensionStat": "ATK%",
+    "skills": [
+        {
+            "name": "Bolts of Downfall",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 5 consecutive shots with a bow. Charged Attack: Performs a more precise Aimed Shot with increased DMG. While aiming, the dark lightning spirits of Immernachtreich shall heed the call of their Prinzessin and indwell the enchanted arrowhead. When fully indwelt, the Rachsüchtig Blitz shall deal immense Electro DMG. Plunging Attack: Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Nightrider",
+            "type": "elemental_skill",
+            "description": "Summons Oz. The night raven forged of darkness and lightning descends upon the land, dealing Electro DMG in a small AoE. For the ability's duration, Oz will continuously attack nearby opponents with Freikugel. Hold to adjust the location Oz will be summoned to. Press again any time during the ability's duration to once again summon him to Fischl's side."
+        },
+        {
+            "name": "Midnight Phantasmagoria",
+            "type": "elemental_burst",
+            "description": "Summons Oz to spread his twin wings of twilight and defend Fischl. Has the following properties during the ability's duration: Fischl takes on Oz's form, greatly increasing her Movement Speed. Strikes nearby opponents with lightning, dealing Electro DMG to opponents she comes into contact with. Each opponent can only be struck once. Once this ability's effects end, Oz will remain on the battlefield and attack his Prinzessin's foes. If Oz is already on the field, then this will reset the duration of his presence."
+        }
+    ],
+    "passives": [
+        {
+            "name": "Mein Hausgarten",
+            "type": "passive_asc_0",
+            "description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%."
+        },
+        {
+            "name": "Stellar Predator",
+            "type": "passive_asc_1",
+            "description": "When Fischl hits Oz with a fully-charged Aimed Shot, Oz brings down Thundering Retribution, dealing AoE Electro DMG equal to 152.7% of the arrow's DMG."
+        },
+        {
+            "name": "Undone Be Thy Sinful Hex",
+            "type": "passive_asc_4",
+            "description": "If your active character triggers an Electro-related Elemental Reaction when Oz is on the field, the opponent shall be stricken with Thundering Retribution that deals Electro DMG equal to 80% of Fischl's ATK."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Gaze of the Deep",
+            "type": "c1",
+            "description": "Even when Oz is not present in combat, he can still watch over Fischl through his raven eyes. When Fischl performs a Normal Attack against an opponent, Oz fires a coordinated attack, dealing DMG equal to 22% of Fischl's ATK."
+        },
+        {
+            "name": "Devourer of All Sins",
+            "type": "c2",
+            "description": "When Nightrider is used, it deals an additional 200% ATK as DMG, and its AoE is increased by 50%."
+        },
+        {
+            "name": "Wings of Nightmare",
+            "type": "c3",
+            "description": "Increases the Level of Nightrider by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Her Pilgrimage of Bleak",
+            "type": "c4",
+            "description": "When Midnight Phantasmagoria is used, it deals 222% of ATK as Electro DMG to surrounding opponents. When the skill duration ends, Fischl regenerates 20% of her HP."
+        },
+        {
+            "name": "Against the Fleeing Light",
+            "type": "c5",
+            "description": "Increases the Level of Midnight Phantasmagoria by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Evernight Raven",
+            "type": "c6",
+            "description": "Extends the duration of Oz's presence on the field by 2s. Additionally, Oz performs coordinated attacks with your active character when present, dealing 30% of Fischl's ATK as Electro DMG."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/Character_Fischl_Full_Wish.png/revision/latest?cb=20220507161249",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/Fischl_Card.png/revision/latest?cb=20220725204926",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/Fischl_Icon.png/revision/latest?cb=20220627171007"
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "name": "Jean",
+    "title": "Dandelion Knight",
+    "element": "Anemo",
+    "weapon": "Sword",
+    "nation": "Mondstadt",
+    "affiliation": "Knights of Favonius",
+    "rarity": 5,
+    "constellation": "Leo Minor",
+    "birthday": "14/03",
+    "description": "The older sister of Barbara, and a descendant of the prestigious Gunnhildr Clan, Jean is the Acting Grand Master of the Knights of Favonius. She is always busy handling unrest across Mondstadt and tirelessly working to maintain the City of Freedom.",
+    "ascensionStat": "Healing Bonus",
+    "skills": [
+        {
+            "name": "Favonius Bladework",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 5 consecutive strikes. Charged Attack: Consumes a certain amount of stamina to launch an opponent using the power of wind. Launched opponents will slowly fall to the ground. Plunging Attack: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Gale Blade",
+            "type": "elemental_skill",
+            "description": "Focusing the might of the formless wind around her blade, Jean releases a miniature storm, launching opponents in the direction she aims at, dealing massive Anemo DMG. Hold: At the cost of continued stamina consumption, Jean can command the whirlwind to pull surrounding opponents and objects towards her front. Direction can be adjusted. Character is immobile during skill duration."
+        },
+        {
+            "name": "Dandelion Breeze",
+            "type": "elemental_burst",
+            "description": "Calling upon the wind's protection, Jean creates a swirling Dandelion Field, launching surrounding opponents and dealing Anemo DMG. At the same time, she instantly regenerates a large amount of HP for all party members. The amount of HP restored scales off Jean's ATK. Dandelion Field: Continuously regenerates HP of characters within the AoE and continuously imbues them with Anemo. Deals Anemo DMG to opponents entering or exiting the Dandelion Field."
+        }
+    ],
+    "passives": [
+        {
+            "name": "Guiding Breeze",
+            "type": "passive_asc_0",
+            "description": "When a Perfect Cooking is achieved on a dish with restorative effects, there is a 12% chance to obtain double the product."
+        },
+        {
+            "name": "Wind Companion",
+            "type": "passive_asc_1",
+            "description": "On hit, Jean's Normal Attacks have a 50% chance to regenerate HP equal to 15% of Jean's ATK for all party members."
+        },
+        {
+            "name": "Let the Wind Lead",
+            "type": "passive_asc_4",
+            "description": "Using Dandelion Breeze will regenerate 20% of its Energy."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Spiraling Tempest",
+            "type": "c1",
+            "description": "Increases the pulling speed of Gale Blade after holding for more than 1s, and increases the DMG dealt by 40%."
+        },
+        {
+            "name": "People's Aegis",
+            "type": "c2",
+            "description": "When Jean picks up an Elemental Orb/Particle, all party members have their Movement SPD and ATK SPD increased by 15% for 15s."
+        },
+        {
+            "name": "When the West Wind Arises",
+            "type": "c3",
+            "description": "Increases the Level of Dandelion Breeze by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Lands of Dandelion",
+            "type": "c4",
+            "description": "Within the Field created by Dandelion Breeze, all opponents have their Anemo RES decreased by 40%."
+        },
+        {
+            "name": "Outbursting Gust",
+            "type": "c5",
+            "description": "Increases the Level of Gale Blade by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Lion's Fang, Fair Protector of Mondstadt",
+            "type": "c6",
+            "description": "Incoming DMG is decreased by 35% within the Field created by Dandelion Breeze. Upon leaving the Dandelion Field, this effect lasts for 3 attacks or 10s."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/Character_Jean_Full_Wish.png/revision/latest?cb=20221014022733",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/Jean_Card.png/revision/latest?cb=20220725210053",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/Jean_Icon.png/revision/latest?cb=20220602180528"
+    }
+}

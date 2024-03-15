@@ -1,0 +1,84 @@
+{
+    "name": "",
+    "title": "",
+    "element": "",
+    "weapon": "",
+    "nation": "",
+    "affiliation": "",
+    "rarity": 0,
+    "constellation": "",
+    "birthday": "d/m",
+    "description": "",
+    "ascensionStat": "",
+    "skills": [
+        {
+            "name": "",
+            "type": "normal_attack",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "elemental_skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "elemental_burst",
+            "description": ""
+        }
+    ],
+    "passives": [
+        {
+            "name": "",
+            "type": "passive_asc_0",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "passive_asc_1",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "passive_asc_4",
+            "description": ""
+        }
+    ],
+    "constellations": [
+        {
+            "name": "",
+            "type": "c1",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "c2",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "c3",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "c4",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "c5",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "c6",
+            "description": ""
+        }
+    ],
+    "images": {
+        "art": "",
+        "card": "",
+        "portrait": ""
+    }
+}

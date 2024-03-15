@@ -1,0 +1,84 @@
+{
+    "name": "Faruzan",
+    "title": "Enigmatic Machinist",
+    "element": "Anemo",
+    "weapon": "Bow",
+    "nation": "Sumeru",
+    "affiliation": "Haravatat",
+    "rarity": 4,
+    "constellation": "Flosculi Implexi",
+    "birthday": "20/08",
+    "description": "She is a renowned professor of the Sumeru Akademiya and member of the Haravatat Darshan. She recently returned to the Akademiya after solving a puzzle and escaping the ruins that trapped her a century ago.",
+    "ascensionStat": "ATK%",
+    "skills": [
+        {
+            "name": "Parthian Shot",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 4 consecutive shots with a bow. Charged Attack: Performs a more precise Aimed Shot with increased DMG. While aiming, mighty winds will accumulate on the arrowhead. A fully charged wind arrow will deal Anemo DMG. Plunging Attack: Fires off a shower of arrows in mid-air before falling and striking the ground, hitting opponents along the path and dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Wind Realm of Nasamjnin",
+            "type": "elemental_skill",
+            "description": "Faruzan deploys a polyhedron that deals AoE Anemo DMG to nearby opponents. She will also enter the Manifest Gale state. While in the Manifest Gale state, Faruzan's next fully charged shot will consume this state and will become a Hurricane Arrow that contains high-pressure currents. This arrow deals Anemo DMG based on the DMG of a fully charged Aimed Shot from 'Normal Attack: Parthian Shot.' Pressurized Collapse: The Hurricane Arrow will apply a Pressurized Collapse effect to the opponent or character hit. This effect will be removed after a short delay, creating a vortex that deals AoE Anemo DMG and pulls nearby objects and opponents in. If the Hurricane Arrow does not hit any opponent or character, it will create a Pressurized Collapse effect at its point of impact. The vortex DMG is considered Elemental Skill DMG."
+        },
+        {
+            "name": "The Wind's Secret Ways",
+            "type": "elemental_burst",
+            "description": "Faruzan deploys a Dazzling Polyhedron that unleashes a Whirlwind Pulse and deals AoE Anemo DMG. While the Dazzling Polyhedron persists, it will continuously move along a triangular path. Once it reaches each corner of that triangular path, it will unleash 1 more Whirlwind Pulse. Whirlwind Pulse: When the Whirlwind Pulse is unleashed, it will apply Perfidious Wind's Bale to nearby opponents, decreasing their Anemo RES. The Whirlwind Pulse will also apply Prayerful Wind's Benefit to all nearby party members when it is unleashed, granting them an Anemo DMG Bonus."
+        }
+    ],
+    "passives": [
+        {
+            "name": "Tomes Light the Path",
+            "type": "passive_asc_0",
+            "description": "Gains 25% more rewards when dispatched on a Sumeru Expedition for 20 hours."
+        },
+        {
+            "name": "Impetuous Flow",
+            "type": "passive_asc_1",
+            "description": "When Faruzan is in the Manifest Gale state created by Wind Realm of Nasamjnin, the amount of time taken to charge a shot is decreased by 60%, and she can apply The Wind's Secret Ways' Perfidious Wind's Bale to opponents who are hit by the vortex created by Pressurized Collapse."
+        },
+        {
+            "name": "Lost Wisdom of the Seven Caverns",
+            "type": "passive_asc_4",
+            "description": "When characters affected by The Wind's Secret Ways' Prayerful Wind's Gift deal Anemo DMG using Normal, Charged, Plunging Attacks, Elemental Skills, or Elemental Bursts to opponents, they will gain the Hurricane Guard effect: This DMG will be increased based on 32% of Faruzan's Base ATK. 1 instance of Hurricane Guard can occur once every 0.8s. This DMG Bonus will be cleared after Prayerful Wind's Benefit expires or after the effect is triggered once."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Truth by Any Means",
+            "type": "c1",
+            "description": "Faruzan can fire off a maximum of 2 Hurricane Arrows using fully charged Aimed Shots while under the effect of a single Manifest Gale created by Wind Realm of Nasamjnin."
+        },
+        {
+            "name": "Overzealous Intellect",
+            "type": "c2",
+            "description": "The duration of the Dazzling Polyhedron created by The Wind's Secret Ways is increased by 6s."
+        },
+        {
+            "name": "Spirit-Orchard Stroll",
+            "type": "c3",
+            "description": "Increases the Level of Wind Realm of Nasamjnin by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Divine Comprehension",
+            "type": "c4",
+            "description": "The vortex created by Pressurized Collapses will restore Energy to Faruzan based on the number of opponents hit: If it hits 1 opponent, it will restore 2 Energy for Faruzan. Each additional opponent hit will restore 0.5 more Energy for Faruzan. A maximum of 4 Energy can be restored to her per vortex."
+        },
+        {
+            "name": "Wonderland of Rumination",
+            "type": "c5",
+            "description": "Increases the Level of The Wind's Secret Ways by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "The Wondrous Path of Truth",
+            "type": "c6",
+            "description": "Characters affected by The Wind's Secret Ways' Prayerful Wind's Benefit have 40% increased CRIT DMG when they deal Anemo DMG. When the active character deals DMG while affected by Prayerful Wind's Benefit, they will apply Pressurized Collapse to the opponent damaged. This effect can be triggered once every 3s. This CD is shared between all party members."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/Character_Faruzan_Full_Wish.png/revision/latest?cb=20221207033630",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/Faruzan_Card.png/revision/latest?cb=20221207033321",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.png/revision/latest?cb=20221207034237"
+    }
+}

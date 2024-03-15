@@ -1,0 +1,84 @@
+{
+    "name": "Ganyu",
+    "title": "Plenilune Gaze",
+    "element": "Cryo",
+    "weapon": "Bow",
+    "nation": "Liyue",
+    "affiliation": "Adepti",
+    "rarity": 5,
+    "constellation": "Sinae Unicornis",
+    "birthday": "02/12",
+    "description": "She is a half-qilin Adeptus under contract with the Geo Archon Morax and serves as the general secretary of the Liyue Qixing.",
+    "ascensionStat": "Crit DMG",
+    "skills": [
+        {
+            "name": "Liutian Archery",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 6 consecutive shots with a bow. Charged Attack: Performs a more precise Aimed Shot with increased DMG. While aiming, an icy aura will accumulate on the arrowhead before the arrow is fired. Has different effects based on how long the energy has been charged: Charge Level 1: Fires off an icy arrow that deals Cryo DMG. Charge Level 2: Fires off a Frostflake Arrow that deals Cryo DMG. The Frostflake Arrow blooms after hitting its target, dealing AoE Cryo DMG. Plunging Attack: Fires off a shower of arrows in mid-air before falling and striking the ground, dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Trail of the Qilin",
+            "type": "elemental_skill",
+            "description": "Leaving a single Ice Lotus behind, Ganyu dashes backward, shunning all impurity and dealing AoE Cryo DMG. Ice Lotus: Continuously taunts surrounding opponents, attracting them to attack it. Endurance scales based on Ganyu's Max HP. Blooms profusely when destroyed or once its duration ends, dealing AoE Cryo DMG."
+        },
+        {
+            "name": "Celestial Shower",
+            "type": "elemental_burst",
+            "description": "Coalesces atmospheric frost and snow to summon a Sacred Cryo Pearl that exorcises evil. During its ability duration, the Sacred Cryo Pearl will continuously rain down shards of ice, striking opponents within an AoE and dealing Cryo DMG."
+        }
+    ],
+    "passives": [
+        {
+            "name": "Preserved for the Hunt",
+            "type": "passive_asc_0",
+            "description": "Refunds 15% of the ore used when crafting Bow-type weapons."
+        },
+        {
+            "name": "Undivided Heart",
+            "type": "passive_asc_1",
+            "description": "After firing a Frostflake Arrow, the CRIT Rate of subsequent Frostflake Arrows and their resulting bloom effects is increased by 20% for 5s."
+        },
+        {
+            "name": "Harmony between Heaven and Earth",
+            "type": "passive_asc_4",
+            "description": "Celestial Shower grants a 20% Cryo DMG Bonus to active members in the AoE."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Dew-Drinker",
+            "type": "c1",
+            "description": "Taking DMG from a Charge Level 2 Frostflake Arrow or Frostflake Arrow Bloom decreases opponents' Cryo RES by 15% for 6s. A hit regenerates 2 Energy for Ganyu. This effect can only occur once per Charge Level 2 Frostflake Arrow, regardless if Frostflake Arrow itself or its Bloom hit the target. "
+        },
+        {
+            "name": "The Auspicious",
+            "type": "c2",
+            "description": "Trail of the Qilin gains 1 additional charge."
+        },
+        {
+            "name": "Cloud-Strider",
+            "type": "c3",
+            "description": "Increases the Level of Celestial Shower by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Westward Sojourn",
+            "type": "c4",
+            "description": "Opponents standing within the AoE of Celestial Shower take increased DMG. This effect strengthens over time. Increased DMG taken begins at 5% and increases by 5% every 3s, up to a maximum of 25%. The effect lingers for 3s after the opponent leaves the AoE."
+        },
+        {
+            "name": "The Merciful",
+            "type": "c5",
+            "description": "Increases the Level of Trail of the Qilin by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "The Clement",
+            "type": "c6",
+            "description": "Using Trail of the Qilin causes the next Frostflake Arrow shot within 30s to not require charging."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/0/0e/Character_Ganyu_Full_Wish.png/revision/latest?cb=20220713045854",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/Ganyu_Card.png/revision/latest?cb=20230519012433",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Ganyu_Icon.png/revision/latest?cb=20230519012425"
+    }
+}

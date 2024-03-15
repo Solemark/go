@@ -1,0 +1,84 @@
+{
+    "name": "Bennett",
+    "title": "Trial by Fire",
+    "element": "Pyro",
+    "weapon": "Sword",
+    "nation": "Mondstadt",
+    "affiliation": "Adventures' Guild",
+    "rarity": 4,
+    "constellation": "Rota Calamitas",
+    "birthday": "29/02",
+    "description": "An orphan discovered by an elderly adventurer as a baby, Bennett was raised in Mondstadt's Adventurers' Guild. He is the one and only member of 'Benny's Adventure Team', as everyone else left the team after experiencing the constant misfortune that follows him.",
+    "ascensionStat": "Energy Recharge",
+    "skills": [
+        {
+            "name": "Strike of Fortune",
+            "type": "normal_attack",
+            "description": "Normal Attack: Performs up to 5 rapid strikes. Charged Attack: Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack: Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact."
+        },
+        {
+            "name": "Passion Overload",
+            "type": "elemental_skill",
+            "description": "Bennett puts all his fire and passion for adventuring into his sword. Results may vary based on how fired up he is... Press: A single, swift flame strike that deals Pyro DMG. Hold (Short): Charges up, resulting in different effects when unleashed based on the Charge Level. Level 1: Strikes twice, dealing Pyro DMG and launching opponents. Level 2: Unleashes 3 consecutive attacks that deal impressive Pyro DMG, but the last attack triggers an explosion that launches both Bennett and the enemy. Bennett takes no damage from being launched."
+        },
+        {
+            "name": "Fantastic Voyage",
+            "type": "elemental_burst",
+            "description": "Bennett performs a jumping attack that deals Pyro DMG, creating an Inspiration Field. Inspiration Field: If the health of a character within the AoE is equal to or falls below 70%, their health will continuously regenerate. The amount of HP restored scales off Bennett's Max HP. If the health of a character within the AoE is higher than 70%, they gain an ATK Bonus that is based on Bennett's Base ATK. Imbues characters within the AoE with Pyro."
+        }
+    ],
+    "passives": [
+        {
+            "name": "It Should Be Safe...",
+            "type": "passive_asc_0",
+            "description": "When dispatched on an expedition in Mondstadt, time consumed is reduced by 25%."
+        },
+        {
+            "name": "Rekindle",
+            "type": "passive_asc_1",
+            "description": "Decreases Passion Overload's CD by 20%."
+        },
+        {
+            "name": "Fearnaught",
+            "type": "passive_asc_4",
+            "description": "When inside Fantastic Voyage's circle, Passion Overload's CD is decreased by 50% and Bennett cannot be launched by this skill's explosion."
+        }
+    ],
+    "constellations": [
+        {
+            "name": "Grand Expectation",
+            "type": "c1",
+            "description": "Fantastic Voyage's ATK increase no longer has an HP restriction, and gains an additional 20% of Bennett's Base ATK."
+        },
+        {
+            "name": "Impasse Conqueror",
+            "type": "c2",
+            "description": "When Bennett's HP falls below 70%, his Energy Recharge is increased by 30%."
+        },
+        {
+            "name": "Unstoppable Fervor",
+            "type": "c3",
+            "description": "Increases the Level of Passion Overload by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Unexpected Odyssey",
+            "type": "c4",
+            "description": "Using a Normal Attack as the second attack of Passion Overload's Charge Level 1 will perform a follow-up attack. This additional attack does 135% of the second attack's DMG."
+        },
+        {
+            "name": "True Explorer",
+            "type": "c5",
+            "description": "Increases the Level of Fantastic Voyage by 3. Maximum upgrade level is 15."
+        },
+        {
+            "name": "Fire Ventures With Me",
+            "type": "c6",
+            "description": "Sword, Claymore, or Polearm-wielding characters inside Fantastic Voyage's radius gain a 15% Pyro DMG Bonus and their weapons are infused with Pyro."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/Character_Bennett_Full_Wish.png/revision/latest?cb=20220507132108",
+        "card": "https://static.wikia.nocookie.net/gensin-impact/images/c/c5/Bennett_Card.png/revision/latest?cb=20220725204904",
+        "portrait": "https://static.wikia.nocookie.net/gensin-impact/images/7/79/Bennett_Icon.png/revision/latest?cb=20210214011829"
+    }
+}

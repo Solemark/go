@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/style">
+    <script defer src="/scripts/clients"></script>
+    <script defer src="scripts/customnav"></script>
+    <title>AOW - Clients</title>
+</head>
+
+<body onload="getClients()">
+    <custom-nav></custom-nav>
+    <div>
+        <h2>Clients</h2>
+        <button type="button" class="blueButton" onclick="newClient.showModal()">New</button>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Controls</th>
+                </tr>
+            </thead>
+            <tbody id="client-table"></tbody>
+        </table>
+    </div>
+    <!-- New Client Dialog -->
+    <dialog id="newClient">
+        <form action="/data/clients/new" method="POST">
+            <div>
+                <h1>Create New Client</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="left-col"><span>First Name:</span></td>
+                            <td><input class="text-box" id="new-fn" name="first_name" placeholder="First Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>Last Name:</span></td>
+                            <td><input class="text-box" id="new-ln" name="last_name" placeholder="Last Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>Email Address:</span></td>
+                            <td><input class="text-box" id="new-ea" name="email_address" placeholder="Email Address"
+                                    required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="redButton" type="button" onclick="clearModal()">Cancel</button>
+                    <button class="blueButton" type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+    <!-- Remove Client Modal -->
+    <dialog id="removeClient">
+        <form action="/data/clients/remove" method="POST">
+            <div>
+                <h1>Remove Client</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="left-col"><span>Client ID:</span></td>
+                            <td><input class="text-box" id="remove-id" name="client_id" placeholder="Client ID"
+                                    readonly></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="redButton" type="button" onclick="clearModal()">Cancel</button>
+                    <button class="blueButton" type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+    <!-- Edit Client Modal -->
+    <dialog id="editClient">
+        <form action="/data/clients/update" method="POST">
+            <div>
+                <h1>Edit Client</h1>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="left-col"><span>ID:</span></td>
+                            <td><input class="text-box" id="edit-id" name="client_id" readonly>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>First Name:</span></td>
+                            <td><input class="text-box" id="edit-fn" name="first_name" placeholder="First Name"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>Last Name:</span></td>
+                            <td><input class="text-box" id="edit-ln" name="last_name" placeholder="Last Name" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>Email Address:</span></td>
+                            <td><input class="text-box" id="edit-ea" name="email_address" placeholder="Email Address"
+                                    required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="redButton" type="button" onclick="clearModal()">Cancel</button>
+                    <button class="blueButton" type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </dialog>
+</body>
+
+</html>
