@@ -30,6 +30,6 @@ func NewClient(w http.ResponseWriter, r *http.Request) {
 		EmailAddress: emailAddress,
 		Visible:      true,
 	})
-	writeClientsList(clientList)
+	writeClientList(clientList)
 	http.Redirect(w, r, "/clients", http.StatusSeeOther)
 }

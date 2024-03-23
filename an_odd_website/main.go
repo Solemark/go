@@ -4,9 +4,17 @@ import (
 	"an_odd_website/router"
 	clientRouter "an_odd_website/router/clients"
 	employeeRouter "an_odd_website/router/employees"
+	settingRouter "an_odd_website/router/settings"
 	"log"
 	"net/http"
 )
+
+func setSettingRoutes() {
+	http.HandleFunc("/data/settings", settingRouter.GetSettingData)
+	http.HandleFunc("/data/settings/new", settingRouter.NewSetting)
+	http.HandleFunc("/data/settings/update", settingRouter.UpdateSetting)
+	http.HandleFunc("/data/settings/remove", settingRouter.RemoveSetting)
+}
 
 func setEmployeeRoutes() {
 	http.HandleFunc("/data/employees", employeeRouter.GetEmployeeData)
@@ -29,6 +37,8 @@ func setRoutes() {
 	http.HandleFunc("/favicon.ico", router.GetIcon)
 	setClientRoutes()
 	setEmployeeRoutes()
+	//setAccountingRoutes()
+	setSettingRoutes()
 }
 
 func main() {

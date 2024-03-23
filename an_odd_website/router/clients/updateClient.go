@@ -7,11 +7,11 @@ import (
 )
 
 func UpdateClient(w http.ResponseWriter, r *http.Request) {
-	var clientList []Client = getClientsList()
+	var cl []Client = getClientsList()
 	var id string = ""
-	var firstName string = ""
-	var lastName string = ""
-	var emailAddress string = ""
+	var fn string = ""
+	var ln string = ""
+	var ea string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
@@ -19,24 +19,22 @@ func UpdateClient(w http.ResponseWriter, r *http.Request) {
 			id = value[0]
 		}
 		if key == "first_name" {
-			firstName = value[0]
+			fn = value[0]
 		}
 		if key == "last_name" {
-			lastName = value[0]
+			ln = value[0]
 		}
 		if key == "email_address" {
-			emailAddress = value[0]
+			ea = value[0]
 		}
 	}
 
-	index, err := strconv.Atoi(id)
+	i, err := strconv.Atoi(id)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	clientList[index-1].FirstName = firstName
-	clientList[index-1].LastName = lastName
-	clientList[index-1].EmailAddress = emailAddress
-	writeClientsList(clientList)
+	cl[i-1] = Client{FirstName: fn, LastName: ln, EmailAddress: ea, Visible: true}
+	writeClientList(cl)
 	http.Redirect(w, r, "/clients", http.StatusSeeOther)
 }

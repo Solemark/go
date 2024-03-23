@@ -7,7 +7,7 @@ import (
 )
 
 func RemoveClient(w http.ResponseWriter, r *http.Request) {
-	var clientList []Client = getClientsList()
+	var cl []Client = getClientsList()
 	var id string = ""
 
 	r.ParseForm()
@@ -17,12 +17,12 @@ func RemoveClient(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	index, err := strconv.Atoi(id)
+	i, err := strconv.Atoi(id)
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	clientList[index-1].Visible = false
-	writeClientsList(clientList)
+	cl[i-1].Visible = false
+	writeClientList(cl)
 	http.Redirect(w, r, "/clients", http.StatusSeeOther)
 }

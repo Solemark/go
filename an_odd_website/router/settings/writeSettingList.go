@@ -1,4 +1,4 @@
-package employeeRouter
+package settingRouter
 
 import (
 	"encoding/csv"
@@ -7,8 +7,8 @@ import (
 	"strconv"
 )
 
-func writeEmployeeList(data []Employee) {
-	file, err := os.Create("data/employees.csv")
+func writeSettingList(data []Setting) {
+	file, err := os.Create("data/settings.csv")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -18,8 +18,8 @@ func writeEmployeeList(data []Employee) {
 	defer writer.Flush()
 	output := [][]string{}
 
-	for _, e := range data {
-		row := []string{e.FirstName, e.LastName, e.EmailAddress, strconv.FormatBool(e.Visible)}
+	for _, s := range data {
+		row := []string{s.Name, strconv.FormatBool(s.Enabled)}
 		output = append(output, row)
 	}
 	writer.WriteAll(output)
