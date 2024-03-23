@@ -19,7 +19,7 @@ func writeEmployeeList(data []Employee) {
 	el := [][]string{}
 
 	for _, e := range data {
-		r := []string{e.FirstName, e.LastName, e.EmailAddress, strconv.FormatBool(e.Visible)}
+		r := []string{e.FirstName, e.LastName, e.EmailAddress, e.Role, strconv.FormatBool(e.Visible)}
 		el = append(el, r)
 	}
 	w.WriteAll(el)

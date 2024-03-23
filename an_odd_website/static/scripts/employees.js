@@ -5,6 +5,7 @@
  * @property {string} FirstName - employee first name
  * @property {string} LastName - employee last name
  * @property {string} EmailAddress - employee email address
+ * @property {string} Role = employee role
  * @property {boolean} Visible - is the employee visible
  */
 
@@ -28,6 +29,7 @@ const getEmployees = () => {
  * find employee id for edit and remove employee
  * @param {number} id - the employee id
  * @param {string} option - the dialog that is being set
+ * @returns {void}
  */
 const displayDialog = (id, option) => {
     document.getElementById(`${option}-id`).value = id
@@ -53,6 +55,7 @@ const updateTable = (data) => {
         let fn = document.createElement("td")
         let ln = document.createElement("td")
         let ea = document.createElement("td")
+        let rl = document.createElement("td")
         let bc = document.createElement("td")
 
         let eb = document.createElement("button")
@@ -69,6 +72,7 @@ const updateTable = (data) => {
         fn.innerHTML = employee.FirstName
         ln.innerHTML = employee.LastName
         ea.innerHTML = employee.EmailAddress
+        rl.innerHTML = employee.Role
         eb.innerHTML = "Edit"
         rb.innerHTML = "Remove"
         bc.append(eb, rb)
@@ -89,9 +93,13 @@ const clearModal = () => {
     document.getElementById("new-fn").value = ""
     document.getElementById("new-ln").value = ""
     document.getElementById("new-ea").value = ""
+    document.getElementById("new-rl").value = ""
+
     document.getElementById("edit-id").value = ""
     document.getElementById("edit-fn").value = ""
     document.getElementById("edit-ln").value = ""
     document.getElementById("edit-ea").value = ""
+    document.getElementById("edit-rl").value = ""
+
     document.getElementById("remove-id").value = ""
 }

@@ -9,6 +9,7 @@ func NewEmployee(w http.ResponseWriter, r *http.Request) {
 	var fn string = ""
 	var ln string = ""
 	var ea string = ""
+	var rl string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
@@ -21,6 +22,9 @@ func NewEmployee(w http.ResponseWriter, r *http.Request) {
 		if key == "email_address" {
 			ea = value[0]
 		}
+		if key == "role" {
+			rl = value[0]
+		}
 	}
 
 	el = append(el, Employee{
@@ -28,6 +32,7 @@ func NewEmployee(w http.ResponseWriter, r *http.Request) {
 		FirstName:    fn,
 		LastName:     ln,
 		EmailAddress: ea,
+		Role:         rl,
 		Visible:      true,
 	})
 

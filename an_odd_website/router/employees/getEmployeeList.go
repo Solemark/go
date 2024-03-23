@@ -22,7 +22,7 @@ func getEmployeeList() []Employee {
 
 	el := []Employee{}
 	for id, item := range d {
-		vis, err := strconv.ParseBool(item[3])
+		vis, err := strconv.ParseBool(item[4])
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -32,6 +32,7 @@ func getEmployeeList() []Employee {
 			FirstName:    item[0],
 			LastName:     item[1],
 			EmailAddress: item[2],
+			Role:         item[3],
 			Visible:      vis,
 		})
 	}

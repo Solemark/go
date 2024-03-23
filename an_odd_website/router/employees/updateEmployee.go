@@ -12,6 +12,7 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 	var fn string = ""
 	var ln string = ""
 	var ea string = ""
+	var rl string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
@@ -27,6 +28,9 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 		if key == "email_address" {
 			ea = value[0]
 		}
+		if key == "role" {
+			rl = value[0]
+		}
 	}
 
 	i, e := strconv.Atoi(id)
@@ -34,7 +38,7 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(e)
 	}
 
-	el[i-1] = Employee{FirstName: fn, LastName: ln, EmailAddress: ea, Visible: true}
+	el[i-1] = Employee{FirstName: fn, LastName: ln, EmailAddress: ea, Role: rl, Visible: true}
 	writeEmployeeList(el)
 	http.Redirect(w, r, "/employees", http.StatusSeeOther)
 }

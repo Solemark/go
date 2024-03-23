@@ -5,5 +5,6 @@ type Employee struct {
 	FirstName    string
 	LastName     string
 	EmailAddress string
+	Role         string
 	Visible      bool
 }
