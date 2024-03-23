@@ -13,8 +13,10 @@ run tests with:
 build with:
 	
 	go build name.go
+	OR
+	go build -ldflags -w name.go
 
-OR
+-ldflags -w removes debug symbols resulting in a smaller binary
 
 target another system with:
 
