@@ -1,0 +1,22 @@
+{
+    "clients": [
+        {
+            "first_name": "FIRSTNAME",
+            "last_name": "LASTNAME",
+            "email": "newemail@address.com",
+            "visible": true
+        },
+        {
+            "first_name": "Timmy",
+            "last_name": "Test",
+            "email": "tt@address.com",
+            "visible": true
+        },
+        {
+            "first_name": "Tommy",
+            "last_name": "Testing",
+            "email": "test@address.com",
+            "visible": true
+        }
+    ]
+}

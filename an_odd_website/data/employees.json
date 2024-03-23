@@ -1,0 +1,25 @@
+{
+    "employees": [
+        {
+            "first_name": "EMPFN",
+            "last_name": "EMPLN",
+            "email": "empe@address.com",
+            "role": "manager",
+            "visible": true
+        },
+        {
+            "first_name": "123",
+            "last_name": "456",
+            "email": "789@address.com",
+            "role": "worker",
+            "visible": true
+        },
+        {
+            "first_name": "753",
+            "last_name": "159",
+            "email": "8246@address.com",
+            "role": "worker",
+            "visible": true
+        }
+    ]
+}
