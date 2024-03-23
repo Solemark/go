@@ -7,14 +7,14 @@ import (
 )
 
 func GetSettingData(w http.ResponseWriter, r *http.Request) {
-	output := getSettingsList()
+	sl := getSettingsList()
 
-	out, err := json.Marshal(output)
-	if err != nil {
-		log.Fatal(err)
+	o, e := json.Marshal(sl)
+	if e != nil {
+		log.Fatal(e)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	w.Write(out)
+	w.Write(o)
 }

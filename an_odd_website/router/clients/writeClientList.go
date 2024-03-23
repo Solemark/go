@@ -8,19 +8,19 @@ import (
 )
 
 func writeClientList(data []Client) {
-	file, err := os.Create("data/clients.csv")
-	if err != nil {
-		log.Fatal(err)
+	f, e := os.Create("data/clients.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
-	defer file.Close()
+	defer f.Close()
 
-	writer := csv.NewWriter(file)
-	defer writer.Flush()
-	output := [][]string{}
+	w := csv.NewWriter(f)
+	defer w.Flush()
+	cl := [][]string{}
 
 	for _, c := range data {
-		row := []string{c.FirstName, c.LastName, c.EmailAddress, strconv.FormatBool(c.Visible)}
-		output = append(output, row)
+		r := []string{c.FirstName, c.LastName, c.EmailAddress, strconv.FormatBool(c.Visible)}
+		cl = append(cl, r)
 	}
-	writer.WriteAll(output)
+	w.WriteAll(cl)
 }

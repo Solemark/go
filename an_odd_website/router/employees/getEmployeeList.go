@@ -8,26 +8,26 @@ import (
 )
 
 func getEmployeeList() []Employee {
-	file, err := os.Open("data/employees.csv")
-	if err != nil {
-		log.Fatal(err)
+	f, e := os.Open("data/employees.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	defer file.Close()
-	reader := csv.NewReader(file)
-	data, err := reader.ReadAll()
-	if err != nil {
-		log.Fatal(err)
+	defer f.Close()
+	r := csv.NewReader(f)
+	d, e := r.ReadAll()
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	output := []Employee{}
-	for id, item := range data {
+	el := []Employee{}
+	for id, item := range d {
 		vis, err := strconv.ParseBool(item[3])
 		if err != nil {
 			log.Fatal(err)
 		}
 
-		output = append(output, Employee{
+		el = append(el, Employee{
 			EmployeeID:   id,
 			FirstName:    item[0],
 			LastName:     item[1],
@@ -35,5 +35,5 @@ func getEmployeeList() []Employee {
 			Visible:      vis,
 		})
 	}
-	return output
+	return el
 }

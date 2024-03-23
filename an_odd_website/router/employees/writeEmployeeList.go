@@ -8,19 +8,19 @@ import (
 )
 
 func writeEmployeeList(data []Employee) {
-	file, err := os.Create("data/employees.csv")
-	if err != nil {
-		log.Fatal(err)
+	f, e := os.Create("data/employees.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
-	defer file.Close()
+	defer f.Close()
 
-	writer := csv.NewWriter(file)
-	defer writer.Flush()
-	output := [][]string{}
+	w := csv.NewWriter(f)
+	defer w.Flush()
+	el := [][]string{}
 
 	for _, e := range data {
-		row := []string{e.FirstName, e.LastName, e.EmailAddress, strconv.FormatBool(e.Visible)}
-		output = append(output, row)
+		r := []string{e.FirstName, e.LastName, e.EmailAddress, strconv.FormatBool(e.Visible)}
+		el = append(el, r)
 	}
-	writer.WriteAll(output)
+	w.WriteAll(el)
 }

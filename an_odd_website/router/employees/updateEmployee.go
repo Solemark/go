@@ -7,11 +7,11 @@ import (
 )
 
 func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
-	var clientList []Employee = getEmployeeList()
+	var el []Employee = getEmployeeList()
 	var id string = ""
-	var firstName string = ""
-	var lastName string = ""
-	var emailAddress string = ""
+	var fn string = ""
+	var ln string = ""
+	var ea string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
@@ -19,24 +19,22 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 			id = value[0]
 		}
 		if key == "first_name" {
-			firstName = value[0]
+			fn = value[0]
 		}
 		if key == "last_name" {
-			lastName = value[0]
+			ln = value[0]
 		}
 		if key == "email_address" {
-			emailAddress = value[0]
+			ea = value[0]
 		}
 	}
 
-	index, err := strconv.Atoi(id)
-	if err != nil {
-		log.Fatal(err)
+	i, e := strconv.Atoi(id)
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	clientList[index-1].FirstName = firstName
-	clientList[index-1].LastName = lastName
-	clientList[index-1].EmailAddress = emailAddress
-	writeEmployeeList(clientList)
+	el[i-1] = Employee{FirstName: fn, LastName: ln, EmailAddress: ea, Visible: true}
+	writeEmployeeList(el)
 	http.Redirect(w, r, "/employees", http.StatusSeeOther)
 }

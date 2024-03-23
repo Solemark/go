@@ -8,32 +8,32 @@ import (
 )
 
 func getClientsList() []Client {
-	file, err := os.Open("data/clients.csv")
-	if err != nil {
-		log.Fatal(err)
+	f, e := os.Open("data/clients.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
-	defer file.Close()
+	defer f.Close()
 
-	reader := csv.NewReader(file)
-	data, err := reader.ReadAll()
-	if err != nil {
-		log.Fatal(err)
+	r := csv.NewReader(f)
+	d, e := r.ReadAll()
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	output := []Client{}
-	for id, item := range data {
-		vis, err := strconv.ParseBool(item[3])
-		if err != nil {
-			log.Fatal(err)
+	cl := []Client{}
+	for id, item := range d {
+		v, e := strconv.ParseBool(item[3])
+		if e != nil {
+			log.Fatal(e)
 		}
 
-		output = append(output, Client{
+		cl = append(cl, Client{
 			ClientID:     id,
 			FirstName:    item[0],
 			LastName:     item[1],
 			EmailAddress: item[2],
-			Visible:      vis,
+			Visible:      v,
 		})
 	}
-	return output
+	return cl
 }

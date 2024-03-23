@@ -5,32 +5,32 @@ import (
 )
 
 func NewEmployee(w http.ResponseWriter, r *http.Request) {
-	var EmployeeList []Employee = getEmployeeList()
-	var firstName string = ""
-	var lastName string = ""
-	var emailAddress string = ""
+	var el []Employee = getEmployeeList()
+	var fn string = ""
+	var ln string = ""
+	var ea string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
 		if key == "first_name" {
-			firstName = value[0]
+			fn = value[0]
 		}
 		if key == "last_name" {
-			lastName = value[0]
+			ln = value[0]
 		}
 		if key == "email_address" {
-			emailAddress = value[0]
+			ea = value[0]
 		}
 	}
 
-	EmployeeList = append(EmployeeList, Employee{
-		EmployeeID:   len(EmployeeList),
-		FirstName:    firstName,
-		LastName:     lastName,
-		EmailAddress: emailAddress,
+	el = append(el, Employee{
+		EmployeeID:   len(el),
+		FirstName:    fn,
+		LastName:     ln,
+		EmailAddress: ea,
 		Visible:      true,
 	})
 
-	writeEmployeeList(EmployeeList)
+	writeEmployeeList(el)
 	http.Redirect(w, r, "/employees", http.StatusSeeOther)
 }

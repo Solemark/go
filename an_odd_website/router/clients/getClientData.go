@@ -7,19 +7,19 @@ import (
 )
 
 func GetClientData(w http.ResponseWriter, r *http.Request) {
-	output := []Client{}
-	for _, client := range getClientsList() {
-		if client.Visible {
-			output = append(output, client)
+	cl := []Client{}
+	for _, c := range getClientsList() {
+		if c.Visible {
+			cl = append(cl, c)
 		}
 	}
 
-	out, err := json.Marshal(output)
-	if err != nil {
-		log.Fatal(err)
+	o, e := json.Marshal(cl)
+	if e != nil {
+		log.Fatal(e)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	w.Write(out)
+	w.Write(o)
 }

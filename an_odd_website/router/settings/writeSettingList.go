@@ -7,20 +7,20 @@ import (
 	"strconv"
 )
 
-func writeSettingList(data []Setting) {
-	file, err := os.Create("data/settings.csv")
-	if err != nil {
-		log.Fatal(err)
+func writeSettingList(d []Setting) {
+	f, e := os.Create("data/settings.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
-	defer file.Close()
+	defer f.Close()
 
-	writer := csv.NewWriter(file)
-	defer writer.Flush()
-	output := [][]string{}
+	w := csv.NewWriter(f)
+	defer w.Flush()
+	sl := [][]string{}
 
-	for _, s := range data {
-		row := []string{s.Name, strconv.FormatBool(s.Enabled)}
-		output = append(output, row)
+	for _, s := range d {
+		r := []string{s.Name, strconv.FormatBool(s.Enabled)}
+		sl = append(sl, r)
 	}
-	writer.WriteAll(output)
+	w.WriteAll(sl)
 }

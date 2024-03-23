@@ -7,28 +7,28 @@ import (
 )
 
 func NewSetting(w http.ResponseWriter, r *http.Request) {
-	var settingList []Setting = getSettingsList()
-	var name string = ""
-	var enabled bool = false
-	var err error = nil
+	var sl []Setting = getSettingsList()
+	var n string = ""
+	var en bool = false
+	var e error = nil
 
 	r.ParseForm()
 	for key, value := range r.Form {
 		if key == "name" {
-			name = value[0]
+			n = value[0]
 		}
 		if key == "enabled" {
-			enabled, err = strconv.ParseBool(value[0])
-			if err != nil {
-				log.Fatal(err)
+			en, e = strconv.ParseBool(value[0])
+			if e != nil {
+				log.Fatal(e)
 			}
 		}
 	}
 
-	settingList = append(settingList, Setting{
-		Name:    name,
-		Enabled: enabled,
+	sl = append(sl, Setting{
+		Name:    n,
+		Enabled: en,
 	})
-	writeSettingList(settingList)
+	writeSettingList(sl)
 	http.Redirect(w, r, "/settings", http.StatusSeeOther)
 }

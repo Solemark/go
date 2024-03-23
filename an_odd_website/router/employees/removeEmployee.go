@@ -7,7 +7,7 @@ import (
 )
 
 func RemoveEmployee(w http.ResponseWriter, r *http.Request) {
-	var employeeList []Employee = getEmployeeList()
+	var el []Employee = getEmployeeList()
 	var id string = ""
 
 	r.ParseForm()
@@ -17,12 +17,12 @@ func RemoveEmployee(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	index, err := strconv.Atoi(id)
-	if err != nil {
-		log.Fatal(err)
+	i, e := strconv.Atoi(id)
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	employeeList[index-1].Visible = false
-	writeEmployeeList(employeeList)
+	el[i-1].Visible = false
+	writeEmployeeList(el)
 	http.Redirect(w, r, "/employees", http.StatusSeeOther)
 }

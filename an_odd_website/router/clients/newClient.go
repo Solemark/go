@@ -5,31 +5,31 @@ import (
 )
 
 func NewClient(w http.ResponseWriter, r *http.Request) {
-	var clientList []Client = getClientsList()
-	var firstName string = ""
-	var lastName string = ""
-	var emailAddress string = ""
+	var cl []Client = getClientsList()
+	var fn string = ""
+	var ln string = ""
+	var ea string = ""
 
 	r.ParseForm()
 	for key, value := range r.Form {
 		if key == "first_name" {
-			firstName = value[0]
+			fn = value[0]
 		}
 		if key == "last_name" {
-			lastName = value[0]
+			ln = value[0]
 		}
 		if key == "email_address" {
-			emailAddress = value[0]
+			ea = value[0]
 		}
 	}
 
-	clientList = append(clientList, Client{
-		ClientID:     len(clientList),
-		FirstName:    firstName,
-		LastName:     lastName,
-		EmailAddress: emailAddress,
+	cl = append(cl, Client{
+		ClientID:     len(cl),
+		FirstName:    fn,
+		LastName:     ln,
+		EmailAddress: ea,
 		Visible:      true,
 	})
-	writeClientList(clientList)
+	writeClientList(cl)
 	http.Redirect(w, r, "/clients", http.StatusSeeOther)
 }

@@ -9,8 +9,8 @@ import (
 func UpdateSetting(w http.ResponseWriter, r *http.Request) {
 	var sl []Setting = getSettingsList()
 	var n string = ""
-	var e bool = false
-	var er error = nil
+	var en bool = false
+	var e error = nil
 
 	r.ParseForm()
 	for key, value := range r.Form {
@@ -18,16 +18,16 @@ func UpdateSetting(w http.ResponseWriter, r *http.Request) {
 			n = value[0]
 		}
 		if key == "enabled" {
-			e, er = strconv.ParseBool(value[0])
-			if er != nil {
-				log.Fatal(er)
+			en, e = strconv.ParseBool(value[0])
+			if e != nil {
+				log.Fatal(e)
 			}
 		}
 	}
 
 	for i, s := range sl {
 		if s.Name == n {
-			sl[i] = Setting{Name: n, Enabled: e}
+			sl[i] = Setting{Name: n, Enabled: en}
 		}
 	}
 	writeSettingList(sl)

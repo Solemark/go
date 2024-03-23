@@ -7,19 +7,19 @@ import (
 )
 
 func GetEmployeeData(w http.ResponseWriter, r *http.Request) {
-	output := []Employee{}
-	for _, client := range getEmployeeList() {
-		if client.Visible {
-			output = append(output, client)
+	el := []Employee{}
+	for _, em := range getEmployeeList() {
+		if em.Visible {
+			el = append(el, em)
 		}
 	}
 
-	out, err := json.Marshal(output)
-	if err != nil {
-		log.Fatal(err)
+	o, e := json.Marshal(el)
+	if e != nil {
+		log.Fatal(e)
 	}
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
-	w.Write(out)
+	w.Write(o)
 }

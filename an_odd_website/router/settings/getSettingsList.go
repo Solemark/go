@@ -8,29 +8,29 @@ import (
 )
 
 func getSettingsList() []Setting {
-	file, err := os.Open("data/settings.csv")
-	if err != nil {
-		log.Fatal(err)
+	f, e := os.Open("data/settings.csv")
+	if e != nil {
+		log.Fatal(e)
 	}
-	defer file.Close()
+	defer f.Close()
 
-	reader := csv.NewReader(file)
-	data, err := reader.ReadAll()
-	if err != nil {
-		log.Fatal(err)
+	r := csv.NewReader(f)
+	d, e := r.ReadAll()
+	if e != nil {
+		log.Fatal(e)
 	}
 
-	output := []Setting{}
-	for _, item := range data {
-		en, err := strconv.ParseBool(item[1])
-		if err != nil {
-			log.Fatal(err)
+	sl := []Setting{}
+	for _, item := range d {
+		en, e := strconv.ParseBool(item[1])
+		if e != nil {
+			log.Fatal(e)
 		}
 
-		output = append(output, Setting{
+		sl = append(sl, Setting{
 			Name:    item[0],
 			Enabled: en,
 		})
 	}
-	return output
+	return sl
 }
