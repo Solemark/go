@@ -5,7 +5,7 @@ import (
 )
 
 func NewClient(w http.ResponseWriter, r *http.Request) {
-	var cl []Client = getClientsList()
+	var cl []Client = getClientList()
 	var fn string = ""
 	var ln string = ""
 	var ea string = ""

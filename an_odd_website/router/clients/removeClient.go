@@ -7,7 +7,7 @@ import (
 )
 
 func RemoveClient(w http.ResponseWriter, r *http.Request) {
-	var cl []Client = getClientsList()
+	var cl []Client = getClientList()
 	var id string = ""
 
 	r.ParseForm()

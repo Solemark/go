@@ -7,7 +7,7 @@ import (
 )
 
 func UpdateClient(w http.ResponseWriter, r *http.Request) {
-	var cl []Client = getClientsList()
+	var cl []Client = getClientList()
 	var id string = ""
 	var fn string = ""
 	var ln string = ""
@@ -34,7 +34,7 @@ func UpdateClient(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	cl[i-1] = Client{FirstName: fn, LastName: ln, EmailAddress: ea, Visible: true}
+	cl[i-1] = Client{ClientID: i - 1, FirstName: fn, LastName: ln, EmailAddress: ea, Visible: true}
 	writeClientList(cl)
 	http.Redirect(w, r, "/clients", http.StatusSeeOther)
 }

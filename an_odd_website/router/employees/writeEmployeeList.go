@@ -1,26 +1,22 @@
 package employeeRouter
 
 import (
-	"encoding/csv"
+	"encoding/json"
 	"log"
 	"os"
-	"strconv"
 )
 
-func writeEmployeeList(data []Employee) {
-	f, e := os.Create("data/employees.csv")
+func writeEmployeeList(el []Employee) {
+	f, e := os.Create("data/employees.json")
 	if e != nil {
 		log.Fatal(e)
 	}
 	defer f.Close()
 
-	w := csv.NewWriter(f)
-	defer w.Flush()
-	el := [][]string{}
-
-	for _, e := range data {
-		r := []string{e.FirstName, e.LastName, e.EmailAddress, e.Role, strconv.FormatBool(e.Visible)}
-		el = append(el, r)
+	j, e := json.MarshalIndent(el, "", "\t")
+	if e != nil {
+		log.Fatal(e)
 	}
-	w.WriteAll(el)
+
+	f.Write(j)
 }

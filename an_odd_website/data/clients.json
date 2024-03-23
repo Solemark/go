@@ -1,22 +1,23 @@
-{
-    "clients": [
-        {
-            "first_name": "FIRSTNAME",
-            "last_name": "LASTNAME",
-            "email": "newemail@address.com",
-            "visible": true
-        },
-        {
-            "first_name": "Timmy",
-            "last_name": "Test",
-            "email": "tt@address.com",
-            "visible": true
-        },
-        {
-            "first_name": "Tommy",
-            "last_name": "Testing",
-            "email": "test@address.com",
-            "visible": true
-        }
-    ]
-}
+[
+	{
+		"ClientID": 0,
+		"FirstName": "FIRSTNAME",
+		"LastName": "LASTNAME",
+		"EmailAddress": "newemail@address.com",
+		"Visible": true
+	},
+	{
+		"ClientID": 1,
+		"FirstName": "Timmy",
+		"LastName": "Tester",
+		"EmailAddress": "tester@address.com",
+		"Visible": true
+	},
+	{
+		"ClientID": 2,
+		"FirstName": "Big",
+		"LastName": "Bad",
+		"EmailAddress": "Wolf@address.com",
+		"Visible": true
+	}
+]

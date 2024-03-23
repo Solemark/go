@@ -1,16 +1,14 @@
-{
-    "settings": [
-        {
-            "enable-clients": false
-        },
-        {
-            "enable-dashboard": false
-        },
-        {
-            "enable-employees": false
-        },
-        {
-            "enable-exporters": false
-        }
-    ]
-}
+[
+    {
+        "enable-clients": false
+    },
+    {
+        "enable-dashboard": false
+    },
+    {
+        "enable-employees": false
+    },
+    {
+        "enable-exporters": false
+    }
+]

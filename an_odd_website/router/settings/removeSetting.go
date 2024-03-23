@@ -3,7 +3,7 @@ package settingRouter
 import "net/http"
 
 func RemoveSetting(w http.ResponseWriter, r *http.Request) {
-	var sl []Setting = getSettingsList()
+	var sl []Setting = getSettingList()
 	var n string = ""
 
 	r.ParseForm()

@@ -1,40 +1,21 @@
 package employeeRouter
 
 import (
-	"encoding/csv"
+	"encoding/json"
 	"log"
 	"os"
-	"strconv"
 )
 
 func getEmployeeList() []Employee {
-	f, e := os.Open("data/employees.csv")
+	f, e := os.ReadFile("data/employees.json")
 	if e != nil {
 		log.Fatal(e)
 	}
 
-	defer f.Close()
-	r := csv.NewReader(f)
-	d, e := r.ReadAll()
+	var el []Employee
+	e = json.Unmarshal(f, &el)
 	if e != nil {
 		log.Fatal(e)
-	}
-
-	el := []Employee{}
-	for id, item := range d {
-		vis, err := strconv.ParseBool(item[4])
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		el = append(el, Employee{
-			EmployeeID:   id,
-			FirstName:    item[0],
-			LastName:     item[1],
-			EmailAddress: item[2],
-			Role:         item[3],
-			Visible:      vis,
-		})
 	}
 	return el
 }

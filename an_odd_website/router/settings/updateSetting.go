@@ -7,7 +7,7 @@ import (
 )
 
 func UpdateSetting(w http.ResponseWriter, r *http.Request) {
-	var sl []Setting = getSettingsList()
+	var sl []Setting = getSettingList()
 	var n string = ""
 	var en bool = false
 	var e error = nil

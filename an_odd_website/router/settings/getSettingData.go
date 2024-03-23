@@ -7,7 +7,7 @@ import (
 )
 
 func GetSettingData(w http.ResponseWriter, r *http.Request) {
-	sl := getSettingsList()
+	sl := getSettingList()
 
 	o, e := json.Marshal(sl)
 	if e != nil {

@@ -8,7 +8,7 @@ import (
 
 func GetClientData(w http.ResponseWriter, r *http.Request) {
 	cl := []Client{}
-	for _, c := range getClientsList() {
+	for _, c := range getClientList() {
 		if c.Visible {
 			cl = append(cl, c)
 		}

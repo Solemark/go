@@ -1,26 +1,22 @@
 package settingRouter
 
 import (
-	"encoding/csv"
+	"encoding/json"
 	"log"
 	"os"
-	"strconv"
 )
 
-func writeSettingList(d []Setting) {
-	f, e := os.Create("data/settings.csv")
+func writeSettingList(sl []Setting) {
+	f, e := os.Create("data/settings.json")
 	if e != nil {
 		log.Fatal(e)
 	}
 	defer f.Close()
 
-	w := csv.NewWriter(f)
-	defer w.Flush()
-	sl := [][]string{}
-
-	for _, s := range d {
-		r := []string{s.Name, strconv.FormatBool(s.Enabled)}
-		sl = append(sl, r)
+	j, e := json.MarshalIndent(sl, "", "\t")
+	if e != nil {
+		log.Fatal(e)
 	}
-	w.WriteAll(sl)
+
+	f.Write(j)
 }

@@ -1,26 +1,22 @@
 package clientRouter
 
 import (
-	"encoding/csv"
+	"encoding/json"
 	"log"
 	"os"
-	"strconv"
 )
 
-func writeClientList(data []Client) {
-	f, e := os.Create("data/clients.csv")
+func writeClientList(cl []Client) {
+	f, e := os.Create("data/clients.json")
 	if e != nil {
 		log.Fatal(e)
 	}
 	defer f.Close()
 
-	w := csv.NewWriter(f)
-	defer w.Flush()
-	cl := [][]string{}
-
-	for _, c := range data {
-		r := []string{c.FirstName, c.LastName, c.EmailAddress, strconv.FormatBool(c.Visible)}
-		cl = append(cl, r)
+	j, e := json.MarshalIndent(cl, "", "\t")
+	if e != nil {
+		log.Fatal(e)
 	}
-	w.WriteAll(cl)
+
+	f.Write(j)
 }

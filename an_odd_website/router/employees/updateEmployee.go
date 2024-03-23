@@ -38,7 +38,7 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(e)
 	}
 
-	el[i-1] = Employee{FirstName: fn, LastName: ln, EmailAddress: ea, Role: rl, Visible: true}
+	el[i-1] = Employee{EmployeeID: i - 1, FirstName: fn, LastName: ln, EmailAddress: ea, Role: rl, Visible: true}
 	writeEmployeeList(el)
 	http.Redirect(w, r, "/employees", http.StatusSeeOther)
 }
