@@ -16,6 +16,8 @@ func setSettingRoutes() {
 	http.HandleFunc("/data/settings/remove", settingRouter.RemoveSetting)
 }
 
+//func setAccountingRoutes() {}
+
 func setEmployeeRoutes() {
 	http.HandleFunc("/data/employees", employeeRouter.GetEmployeeData)
 	http.HandleFunc("/data/employees/new", employeeRouter.NewEmployee)
