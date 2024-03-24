@@ -11,9 +11,7 @@ import (
 
 func setSettingRoutes() {
 	http.HandleFunc("/data/settings", settingRouter.GetSettingData)
-	http.HandleFunc("/data/settings/new", settingRouter.NewSetting)
 	http.HandleFunc("/data/settings/update", settingRouter.UpdateSetting)
-	http.HandleFunc("/data/settings/remove", settingRouter.RemoveSetting)
 }
 
 //func setAccountingRoutes() {}
