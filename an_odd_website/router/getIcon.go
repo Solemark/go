@@ -8,7 +8,7 @@ import (
 func GetIcon(w http.ResponseWriter, r *http.Request) {
 	file, err := os.ReadFile("static/favicon.ico")
 	if err != nil {
-		handleError(w, "Error! No Icon!")
+		HandleError(w, "Error! No Icon!")
 		return
 	}
 

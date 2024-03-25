@@ -10,7 +10,7 @@ func GetStyles(w http.ResponseWriter, r *http.Request) {
 	style := r.PathValue("style")
 	file, err := os.ReadFile(fmt.Sprintf("static/styles/%s.css", style))
 	if err != nil {
-		handleError(w, "Error! Style not found!")
+		HandleError(w, "Error! Style not found!")
 		return
 	}
 
