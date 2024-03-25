@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func ErrorHandler(w http.ResponseWriter, message string) {
+func errorHandler(w http.ResponseWriter, message string) {
 	o, e := json.Marshal(message)
 	CheckAndLogError(e)
 

@@ -17,7 +17,7 @@ func GetWebPage(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if err != nil {
-		ErrorHandler(w, "Error! Page not found!")
+		errorHandler(w, "Error! Page not found!")
 		return
 	}
 
