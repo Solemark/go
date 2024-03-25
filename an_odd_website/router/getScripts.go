@@ -10,7 +10,7 @@ func GetScripts(w http.ResponseWriter, r *http.Request) {
 	script := r.PathValue("script")
 	file, err := os.ReadFile(fmt.Sprintf("static/scripts/%s.js", script))
 	if err != nil {
-		HandleError(w, "Error! Script not found!")
+		ErrorHandler(w, "Error! Script not found!")
 		return
 	}
 
