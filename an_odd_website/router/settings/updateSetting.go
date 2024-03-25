@@ -1,7 +1,7 @@
 package settingRouter
 
 import (
-	"log"
+	"an_odd_website/router"
 	"net/http"
 	"strconv"
 )
@@ -19,9 +19,7 @@ func UpdateSetting(w http.ResponseWriter, r *http.Request) {
 		}
 		if key == "enabled" {
 			en, e = strconv.ParseBool(value[0])
-			if e != nil {
-				log.Fatal(e)
-			}
+			router.CheckAndLogError(e)
 		}
 	}
 

@@ -1,8 +1,8 @@
 package clientRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
-	"log"
 	"net/http"
 )
 
@@ -15,9 +15,7 @@ func GetClientData(w http.ResponseWriter, r *http.Request) {
 	}
 
 	o, e := json.Marshal(cl)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)

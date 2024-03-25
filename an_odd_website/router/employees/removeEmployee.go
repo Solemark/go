@@ -1,7 +1,7 @@
 package employeeRouter
 
 import (
-	"log"
+	"an_odd_website/router"
 	"net/http"
 	"strconv"
 )
@@ -18,9 +18,7 @@ func RemoveEmployee(w http.ResponseWriter, r *http.Request) {
 	}
 
 	i, e := strconv.Atoi(id)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	el[i-1].Visible = false
 	writeEmployeeList(el)

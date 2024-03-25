@@ -1,7 +1,7 @@
 package clientRouter
 
 import (
-	"log"
+	"an_odd_website/router"
 	"net/http"
 	"strconv"
 )
@@ -17,10 +17,8 @@ func RemoveClient(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	i, err := strconv.Atoi(id)
-	if err != nil {
-		log.Fatal(err)
-	}
+	i, e := strconv.Atoi(id)
+	router.CheckAndLogError(e)
 
 	cl[i-1].Visible = false
 	writeClientList(cl)

@@ -1,8 +1,8 @@
 package employeeRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
-	"log"
 	"net/http"
 )
 
@@ -15,9 +15,7 @@ func GetEmployeeData(w http.ResponseWriter, r *http.Request) {
 	}
 
 	o, e := json.Marshal(el)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)

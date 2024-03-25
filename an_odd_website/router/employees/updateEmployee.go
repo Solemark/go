@@ -1,7 +1,7 @@
 package employeeRouter
 
 import (
-	"log"
+	"an_odd_website/router"
 	"net/http"
 	"strconv"
 )
@@ -34,9 +34,7 @@ func UpdateEmployee(w http.ResponseWriter, r *http.Request) {
 	}
 
 	i, e := strconv.Atoi(id)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	el[i-1] = Employee{EmployeeID: i - 1, FirstName: fn, LastName: ln, EmailAddress: ea, Role: rl, Visible: true}
 	writeEmployeeList(el)

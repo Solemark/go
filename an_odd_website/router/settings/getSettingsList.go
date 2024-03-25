@@ -1,6 +1,7 @@
 package settingRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
 	"log"
 	"os"
@@ -8,9 +9,7 @@ import (
 
 func getSettingList() []Setting {
 	f, e := os.ReadFile("data/settings.json")
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	var el []Setting
 	e = json.Unmarshal(f, &el)

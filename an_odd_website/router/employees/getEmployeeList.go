@@ -1,6 +1,7 @@
 package employeeRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
 	"log"
 	"os"
@@ -14,8 +15,6 @@ func getEmployeeList() []Employee {
 
 	var el []Employee
 	e = json.Unmarshal(f, &el)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 	return el
 }

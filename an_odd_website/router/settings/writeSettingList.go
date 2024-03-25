@@ -1,6 +1,7 @@
 package settingRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
 	"log"
 	"os"
@@ -8,9 +9,7 @@ import (
 
 func writeSettingList(sl []Setting) {
 	f, e := os.Create("data/settings.json")
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 	defer f.Close()
 
 	j, e := json.MarshalIndent(sl, "", "\t")

@@ -1,21 +1,17 @@
 package clientRouter
 
 import (
+	"an_odd_website/router"
 	"encoding/json"
-	"log"
 	"os"
 )
 
 func getClientList() []Client {
 	f, e := os.ReadFile("data/clients.json")
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 
 	var cl []Client
 	e = json.Unmarshal(f, &cl)
-	if e != nil {
-		log.Fatal(e)
-	}
+	router.CheckAndLogError(e)
 	return cl
 }
