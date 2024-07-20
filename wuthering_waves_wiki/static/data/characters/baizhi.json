@@ -1,0 +1,58 @@
+{
+    "name": "Baizhi",
+    "title": "Healing You'tan",
+    "element": "Glacio",
+    "weapon": "Rectifier",
+    "nation": "Huanglong",
+    "affiliation": "Huaxu Academy",
+    "rarity": 4,
+    "birthday": "10/09",
+    "description": "She is a researcher in Remnant Ecoacoustics at Huaxu Academy. Baizhi's once unfulfilled wish has now manifested as her loyal companion. The Remnant Creature You'tan is her source of healing powers, and a lifelong research focus.",
+    "skills": [
+        {
+            "name": "Destined Promise",
+            "type": "Basic Attack",
+            "description": "Basic Attack: Baizhi instructs You'tan to perform up to 4 consecutive attacks, dealing Glacio DMG.\nHeavy Attack: Baizhi continuously consumes Stamina to command You'tan to attack enemies, dealing Glacio DMG. During Heavy Attack, Baizhi can command You'tan to move.\nMid-air Attack: Baizhi consumes Stamina and summons You'tan in mid-air to perform a Plunging Attack, dealing Glacio DMG.\nDodge Counter: Use Basic Attack after a successful Dodge to attack the target, dealing Glacio DMG."
+        },
+        {
+            "name": "Emergency Plan",
+            "type": "Resonance Skill",
+            "description": "Baizhi calls You'tan to attack the target, dealing Glacio DMG while restoring HP for the entire team."
+        },
+        {
+            "name": "Momentary Union",
+            "type": "Resonance Liberation",
+            "description": "Baizhi summons You'tan to restore HP for the entire team, generating 4 stacks of Remnant Entities.\nRemnant Entities: Remnant Entities follow the active team members and automatically consume 1 stacks of Remnant Entities to attack the targets every 2.5s, dealing Glacio DMG on hit while restoring HP to all team members nearby."
+        },
+        {
+            "name": "Cycle of Life",
+            "type": "Forte Circuit",
+            "description": "You'tan: A Remnant Creature that answers to Baizhi’s mind and desires while sharing all her attributes. You’tan goes back to Baizhi when Baizhi dodges.\nConcentration: Baizhi consumes all \"Concentrations\" when casting Heavy Attack or Resonance Skill Emergency Plan to continuously restore HP for Characters nearby. Each 1 \"Concentration\" consumed restores HP for 1 time every 2s. When Baizhi consumes \"Concentration\" to cast Heavy Attack, Baizhi additionally restores Concerto Energy and Resonance Energy; When Baizhi consumes \"Concentration\" to cast Resonance Skill Emergency Plan, Baizhi additionally restores Concerto Energy.\nConcentration: Baizhi can hold up to 4 \"Concentrations\". Baizhi obtains 1 \"Concentration\" for every Basic Attack on hit."
+        },
+        {
+            "name": "Harmonic Range",
+            "type": "Inherent Skill",
+            "description": "When Baizhi casts Resonance Skill Emergency Plan, You'tan generates a field of Euphonia that lasts for 15s.\nEuphonia: ATK of the Resonators who picks up Euphonia is increased by 15% for 20s."
+        },
+        {
+            "name": "Stimulus Feedback",
+            "type": "Inherent Skill",
+            "description": "For every Heavy Attack on hit, Baizhi restores HP to the nearby team member with the least HP equal to 0.25% of Baizhi's max HP."
+        },
+        {
+            "name": "Overflowing Frost",
+            "type": "Intro Skill",
+            "description": "Baizhi calls You'tan to perform 1 plunging attack, dealing Glacio DMG while restoring HP to all team members nearby."
+        },
+        {
+            "name": "Rejuvinating Flow",
+            "type": "Outro Skill",
+            "description": "Baizhi restores HP equal to 1.54% of her max HP to the next character (or other characters on a nearby team that activates an Outro Skill) every 3s for 30s. Resonators gaining this healing also gain 15% all-Type DMG Deepen for 6s."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/c/cc/Baizhi_Full_Sprite.png/revision/latest?cb=20240202080219",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/e/e5/Character_Baizhi_Card.jpg/revision/latest?cb=20240128125457",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/6/66/Baizhi_Icon.png/revision/latest?cb=20240523015334"
+    }
+}

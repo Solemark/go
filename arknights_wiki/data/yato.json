@@ -1,0 +1,17 @@
+{
+    "name": "Yato",
+    "class": "Vanguard",
+    "subclass": "Skill-DP / Pioneer",
+    "trait": "Blocks 2 enemies",
+    "rarity": 2,
+    "talent": [
+        {
+            "name": "Fast Redeployment",
+            "desc": "Redeployment Time -30 seconds"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +30%",
+        "When this Operator is assigned to a Factory, productivity +15%"
+    ]
+}

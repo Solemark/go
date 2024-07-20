@@ -5,7 +5,6 @@ import (
 	"net/http"
 )
 
-// Maps routes and starts the http server
 func main() {
 	http.Handle("/", http.FileServer(http.Dir("static")))
 

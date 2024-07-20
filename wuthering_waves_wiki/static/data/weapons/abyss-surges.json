@@ -1,0 +1,9 @@
+{
+    "name": "Abyss Surges",
+    "type": "Gauntlet",
+    "rarity": 5,
+    "stat": "ATK%",
+    "description": "Designed after ginkgo leaves, these gauntlets are sturdy and unadorned. Made from durable material, they offer exceptional protection while dealing significant damage, making them a formidable weapon that excels in defense and offense.",
+    "effect": "Energy Regen is increased by a percentage. When Resonance Skill hits a target, Basic Attack Damage is increased by a percentage lasting for 8s. when Basic Attack hits a target, Resonance Skill Damage is increased by a percentage lasting for 8s.",
+    "image": "https://static.wikia.nocookie.net/wutheringwaves/images/b/be/Weapon_Abyss_Surges.png/revision/latest?cb=20240606152429"
+}

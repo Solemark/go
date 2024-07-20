@@ -1,0 +1,9 @@
+{
+    "name": "Static Mist",
+    "type": "Pistol",
+    "rarity": 5,
+    "stat": "Crit Rate",
+    "description": "Designed after ginkgo leaves, these pistol are lightweighted and easy to handle, capable of firing bullets strong enough to break steel.",
+    "effect": "Stormy Resolution: Energy Regen is increased by a percentage. After performing Outro Skill, ATK for party members is increased by a percentage. This effect can stack up to 1 time and last for 14s.",
+    "image": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d2/Weapon_Static_Mist.png/revision/latest?cb=20240515175305"
+}

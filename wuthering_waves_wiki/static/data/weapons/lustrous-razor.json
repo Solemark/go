@@ -1,0 +1,9 @@
+{
+    "name": "Lustrous Razor",
+    "type": "Broadblade",
+    "rarity": 5,
+    "stat": "ATK%",
+    "description": "Designed after ginkgo leaves, this broadblade boasts flawless sleekness and a formidably sharp edge.",
+    "effect": "Incision: Energy Regen is increased by a percentage. When Resonance Skill hits a target, Resonance Liberation Damage is increased by a percentage. This effect can stack up to 2 times and last for 12s.",
+    "image": "https://static.wikia.nocookie.net/wutheringwaves/images/c/c1/Weapon_Lustrous_Razor.png/revision/latest?cb=20240606152146"
+}

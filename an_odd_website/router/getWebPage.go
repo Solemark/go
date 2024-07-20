@@ -9,17 +9,13 @@ import (
 func GetWebPage(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.RequestURI()
 	var file []byte = []byte{}
-	var err error = nil
+	var e error = nil
 
-	file, err = os.ReadFile(fmt.Sprintf("static/%s.html", url))
+	file, e = os.ReadFile(fmt.Sprintf("static/%s.html", url))
 	if url == "/" {
-		file, err = os.ReadFile("static/index.html")
+		file, e = os.ReadFile("static/index.html")
 	}
-
-	if err != nil {
-		errorHandler(w, "Error! Page not found!")
-		return
-	}
+	errorHandler(w, e)
 
 	w.Header().Set("Content-Type", "text/html")
 	w.WriteHeader(http.StatusOK)

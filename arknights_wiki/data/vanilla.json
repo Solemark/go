@@ -1,0 +1,26 @@
+{
+    "name": "Vanilla",
+    "class": "Vanguard",
+    "subclass": "Skill-DP / Pioneer",
+    "trait": " Blocks 2 enemies",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "ATK UP",
+            "desc": "+ATK%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "Instantly gains 6 Deployment Points. Gain ATK"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Factory, productivity +25%",
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%"
+    ]
+}

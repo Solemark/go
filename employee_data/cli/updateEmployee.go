@@ -7,17 +7,14 @@ import (
 
 /*Update an existing employee*/
 func updateEmployee(employees []employee.Employee) []employee.Employee {
-	var name string
-	var phone string
-	var email string
-	var rate float32
-	var input string
-	var flag bool
+	name, phone, email, input := "", "", "", ""
+	flag := false
+	rate := 0.0
 
 	fmt.Print("Enter employee name: ")
 	fmt.Scanln(&input)
 	for key, employee := range employees {
-		if input == employee.GetName() {
+		if input == employee.Name {
 			flag = true
 			fmt.Print("Update employee name: ")
 			fmt.Scanln(&name)
@@ -31,10 +28,10 @@ func updateEmployee(employees []employee.Employee) []employee.Employee {
 			fmt.Print("Update employee rate: ")
 			fmt.Scanln(&rate)
 
-			employees[key].SetName(name)
-			employees[key].SetPhone(phone)
-			employees[key].SetEmail(email)
-			employees[key].SetRate(rate)
+			employees[key].Name = name
+			employees[key].Phone = phone
+			employees[key].Email = email
+			employees[key].Rate = rate
 		}
 	}
 	if flag {

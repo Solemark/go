@@ -1,0 +1,70 @@
+{
+    "name": "Lancet-2",
+    "class": "Medic",
+    "subclass": "ST / Medic",
+    "trait": "Restores the HP of allies and ignores the Deployment Limit, but has a long Redeployment Time",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 200 after deployment"
+        },
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 260 after deployment"
+        },
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 320 after deployment"
+        },
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 380 after deployment"
+        },
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 440 after deployment"
+        },
+        {
+            "name": "Support Spray",
+            "desc": "Immediately restores the HP of all allies by 500 after deployment"
+        }
+    ],
+    "stats": [
+        {
+            "rank": 0,
+            "min": {
+                "LVL": 1,
+                "HP": 261,
+                "ATK": 42,
+                "DEF": 16,
+                "RES": 0,
+                "RDPL": 200,
+                "DP": 3,
+                "BLK": 1,
+                "ATKS": 2.85
+            },
+            "max": {
+                "LVL": 30,
+                "HP": 435,
+                "ATK": 70,
+                "DEF": 27,
+                "RES": 0,
+                "RDPL": 200,
+                "DP": 3,
+                "BLK": 1,
+                "ATKS": 2.85
+            }
+        }
+    ],
+    "base skill": [
+        {
+            "unlock": "E0 LVL 1",
+            "desc": "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%"
+        },
+        {
+            "unlock": "E0 LVL 30",
+            "desc": "When this Operator is assigned to a Dormitory, restores +0.65 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place)"
+        }
+    ]
+}

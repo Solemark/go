@@ -1,0 +1,26 @@
+{
+    "name": "Midnight",
+    "class": "Guard",
+    "subclass": "Ranged / Lord",
+    "trait": "Can launch Ranged Attacks that deal 80% of normal ATK",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Targeting - Primary",
+            "desc": "When attacking has a chance to increase the current damage of that attack by a percentage"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%; Damage dealt by Normal Attacks turn into Arts damage"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and Morale consumed per hour -0.25",
+        "When this Operator is assigned to a Factory, Originium formula related productivity +30%"
+    ]
+}

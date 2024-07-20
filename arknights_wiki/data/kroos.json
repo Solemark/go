@@ -1,0 +1,26 @@
+{
+    "name": "Kroos",
+    "class": "Sniper",
+    "subclass": "Anti-Air / Marksman",
+    "trait": "Attacks aerial enemies first",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Targeting - Primary",
+            "desc": "When attacking has a chance to increase the current damage of that attack by a percentage"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "on hit",
+                "act": "auto",
+                "desc": "The next attack shoots 2 in a row, dealing a percentage of ATK as physical damage with each shot."
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Factory, productivity +15% in the first hour and thereafter +2% per hour, up to +25%",
+        "When this Operator is assigned to a Dormitory, self Morale recovered +0.7 per hour"
+    ]
+}

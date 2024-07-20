@@ -1,0 +1,26 @@
+{
+    "name": "Melantha",
+    "class": "Guard",
+    "subclass": "Duelist / Dreadnought",
+    "trait": "Blocks 1 enemy",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "ATK UP",
+            "desc": "+ATK%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "gain ATK"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +25% and the order limit +1",
+        "When this Operator is assigned to the Workshop to process any material, the production rate of byproduct increases by 40%"
+    ]
+}

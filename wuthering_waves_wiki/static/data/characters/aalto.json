@@ -1,0 +1,58 @@
+{
+    "name": "Aalto",
+    "title": "Mistcloak Strike",
+    "element": "Aero",
+    "weapon": "Pistol",
+    "nation": "New Federation",
+    "affiliation": "Black Shores",
+    "rarity": 4,
+    "birthday": "11/06",
+    "description": "He is an Information Broker from the New Federation and a Consultant of the Black Shores.",
+    "skills": [
+        {
+            "name": "Half Truths",
+            "type": "Basic Attack",
+            "description": "Basic Attack: Aalto fires up to 5 consecutive shots, dealing Aero DMG. Basic Attack 4 will spread the \"Mist\" forward, which lasts for 1.5s.\nHeavy Attack: Aalto enters the aiming state for a more powerful shot. The aimed shot fired after charging finishes deals Aero DMG.\nMid-air Attack: Aalto consumes Stamina to perform consecutive shots at the target in mid-air, dealing Aero DMG.\nDodge Counter: Use Basic Attack after a successful Dodge to attack the target, dealing Aero DMG."
+        },
+        {
+            "name": "Shift Trick",
+            "type": "Resonance Skill",
+            "description": "Mist Avatar: Casts \"Mist\" and 1 \"Mist Avatar(s)\" to taunt the surrounding targets. The avatars inherit a portion of Aalto's HP and generate 6 Mist Bullets around them, dealing Aero DMG.\nMist Missiles: Deals Aero DMG, considered as Resonance Skill damage."
+        },
+        {
+            "name": "Flower in the Mist",
+            "type": "Resonance Liberation",
+            "description": "Generate a \"Gate of Quandary\" in front, dealing Aero DMG. When bullets pass trough the \"Gate of Quandary\", ATK is increased.\"Gate of Quandary\" lasts for 10s."
+        },
+        {
+            "name": "Misty Cover",
+            "type": "Forte Circuit",
+            "description": "When Aalto passes through \"Mist\" or \"Gate of Quandary\", he enters \"Mistcloak Dash\".\nMistcloak Dash: Movement speed increased. During this period, \"Mist Drops\" are continuously consumed, and for each 1 \"Mist Drop\" consumed, 1 Resonance Skill Mist Missile is generated.\nMist Drops: Aalto can hold up to 6 Mist Drops. When Basic Attack or Mid-air Attack passes through \"Mist\" and hits the target, 1 \"Mist Drop\" is recovered."
+        },
+        {
+            "name": "Perfect Performance",
+            "type": "Inherent Skill",
+            "description": "Aalto's Heavy Attack will always criticlly hit, triggered once every 30s."
+        },
+        {
+            "name": "Mid-game Break",
+            "type": "Inherent Skill",
+            "description": "Aalto will continuously recover Stamina when he is in the Forte Circuit Mistcloak Dash state."
+        },
+        {
+            "name": "Feint Shot",
+            "type": "Intro Skill",
+            "description": "Aalto shows up out of thin air to perform rapid continuous shooting, dealing Aero DMG."
+        },
+        {
+            "name": "Dissolving Mist",
+            "type": "Outro Skill",
+            "description": "The next character (or other characters on a nearby team that activates an Outro Skill) gains 23% Aero DMG Deepen for 14s or until they are switched off field."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/f/f1/Aalto_Full_body_illustration.png/revision/latest?cb=20240129090949",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/6/65/Aalto_Card.jpg/revision/latest/scale-to-width-down/1000?cb=20231221174300",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/5/51/Aalto_Icon.png/revision/latest?cb=20240523015427"
+    }
+}

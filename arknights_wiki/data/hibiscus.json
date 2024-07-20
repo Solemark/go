@@ -1,0 +1,26 @@
+{
+    "name": "Hibiscus",
+    "class": "Medic",
+    "subclass": "ST / Medic",
+    "trait": "Restores the HP of allies ",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Healing Up",
+            "desc": "+ATK%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Dormitory, restores +0.55 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place) ",
+        "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 70%"
+    ]
+}

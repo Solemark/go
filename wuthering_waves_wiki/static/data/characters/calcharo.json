@@ -1,0 +1,58 @@
+{
+    "name": "Calcharo",
+    "title": "Phantom Hunters",
+    "element": "Electro",
+    "weapon": "Broadblade",
+    "nation": "New Federation",
+    "affiliation": "Ghost Hounds",
+    "rarity": 5,
+    "birthday": "08/07",
+    "description": "He is a former exile from the New Federation's Lawless Zone, and is the leader of the Ghost Hounds, a multinational mercenary group.",
+    "skills": [
+        {
+            "name": "Gnawing Fangs",
+            "type": "Basic Attack",
+            "description": "Basic Attack: Calcharo performs up to 4 consecutive attacks, dealing Electro DMG.\nHeavy Attack: Consumes Stamina to attack the target, dealing Electro DMG.\nMid-air Attack: Consumes Stamina to perform a Mid-Air Plunging Attack, dealing Electro DMG.\nDodge Counter: Use Basic Attack after a successful Dodge to attack the target, dealing Electro DMG."
+        },
+        {
+            "name": "Extermination Order",
+            "type": "Resonance Skill",
+            "description": "Calcharo performs up to 3 consecutive attacks, dealing Electro DMG. If Calcharo is switched off field, or if Resonance Skill Extermination Order is not performed again in a while, this skill will enter Cooldown. Resonance Skill Extermination Order does not interrupt Calcharo's Basic Attack combo."
+        },
+        {
+            "name": "Phantom Etching",
+            "type": "Resonance Liberation",
+            "description": "Calcharo attacks the target, dealing Electro DMG and enters Deathblade Gear state. After Resonance Liberation Deathblade Gear state ends, Calcharo's next Intro Skill is replaced with Intro Skill \"Necessary Means\", which deals Electro DMG, considered as Intro Skill damage."
+        },
+        {
+            "name": "Hunting Mission",
+            "type": "Forte Circuit",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Intro Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Outro Skill",
+            "description": ""
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/4/45/Calcharo_Model.png/revision/latest?cb=20240522194656",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/8/8b/Calcharo_Card.jpg/revision/latest/scale-to-width-down/1000?cb=20240402110305",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/1/12/Calcharo_Icon.png/revision/latest?cb=20240523015359"
+    }
+}

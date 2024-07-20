@@ -1,0 +1,26 @@
+{
+    "name": "Steward",
+    "class": "Caster",
+    "subclass": "ST / Core Caster",
+    "trait": "Deals Arts damage",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Armor Break",
+            "desc": "+ATK%; Attacks enemies with the highest DEF first"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "on hit",
+                "act": "auto",
+                "desc": "Increases the ATK of the next attack to a percentage"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order limit +5 and Morale consumed per hour -0.25",
+        "When this Operator is assigned to a Factory, productivity +25%"
+    ]
+}

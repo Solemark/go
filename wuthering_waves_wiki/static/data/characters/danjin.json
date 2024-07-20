@@ -1,0 +1,58 @@
+{
+    "name": "Danjin",
+    "title": "Scarlet Shade",
+    "element": "Havoc",
+    "weapon": "Sword",
+    "nation": "Huanglong",
+    "affiliation": "Midnight Rangers",
+    "rarity": 4,
+    "birthday": "31/08",
+    "description": "She is a member of the Midnight Rangers.",
+    "skills": [
+        {
+            "name": "",
+            "type": "Basic Attack",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Liberation",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Forte Circuit",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Intro Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Outro Skill",
+            "description": ""
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4f/Danjin_Full_Sprite.png/revision/latest?cb=20230403035004",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/1/1b/Danjin_Card_2.jpg/revision/latest/scale-to-width-down/1000?cb=20231221173838",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/5/5a/Danjin_Icon.png/revision/latest?cb=20240523015142"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "U-Official",
+    "class": "Supporter",
+    "subclass": "Aura / Bard",
+    "trait": "Does not attack but continuously restores the HP of all allies within range (the HP restored per second is equal to 10% of self ATK). This unit is unaffected by Inspire, and ignores the Deployment Limit, but has a long Redeployment Time.",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Short-Circuiting Genius",
+            "desc": "Less likely to be attacked; After being deployed for a certain duration, Stun other units within range for 7.5 seconds"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +10%, but all Pure Gold orders in that Trading Post will only trade 2 Pure Gold (not considered as defaulted trade)",
+        "When this Operator is assigned to the Reception Room, increases the likelihood of obtaining clues that are already on the Clue Board."
+    ]
+}

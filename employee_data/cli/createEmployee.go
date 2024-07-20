@@ -7,10 +7,8 @@ import (
 
 /*Create a new employee and add it to the list*/
 func createEmployee(employees []employee.Employee) []employee.Employee {
-	var name string
-	var phone string
-	var email string
-	var rate float32
+	name, phone, email := "", "", ""
+	rate := 0.0
 
 	fmt.Println("Create a new employee")
 	fmt.Print("Enter new employee name: ")
@@ -25,7 +23,7 @@ func createEmployee(employees []employee.Employee) []employee.Employee {
 	fmt.Print("Enter new employee rate: ")
 	fmt.Scanln(&rate)
 
-	emp := employee.Employee{Email: name, Name: phone, Phone: email, Rate: rate}
+	emp := employee.Employee{Name: name, Phone: phone, Email: email, Rate: rate}
 	employees = append(employees, emp)
 	display(employees)
 	return employees

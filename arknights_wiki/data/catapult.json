@@ -1,0 +1,26 @@
+{
+    "name": "Catapult",
+    "class": "Sniper",
+    "subclass": "AoE / Artilleryman",
+    "trait": "Deals AOE Physical damage",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Lightweight",
+            "desc": "DP Cost -1"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "Increases AOE of Normal Attacks by a percentage"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +30% and Morale consumed per hour -0.25",
+        "When this Operator is assigned to the Workshop to process elite material, the production rate of byproduct increases by 80%"
+    ]
+}

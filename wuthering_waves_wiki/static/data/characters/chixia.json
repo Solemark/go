@@ -1,0 +1,58 @@
+{
+    "name": "Chixia",
+    "title": "Gallant Blaze",
+    "element": "Fusion",
+    "weapon": "Pistol",
+    "nation": "Huanglong",
+    "affiliation": "Ministry of Development",
+    "rarity": 4,
+    "birthday": "18/04",
+    "description": "Chixia is a junior Patroller in Jinzhou. She roams the city daily, leaving a fiery mark on every alley she stamps through.",
+    "skills": [
+        {
+            "name": "POW POW",
+            "type": "Basic Attack",
+            "description": "Basic Attack: Chixia fires up to 4 consecutive shots, dealing Fusion DMG.\nHeavy Attack: Chixia enters the aiming state for a more powerful shot. The aimed shot fired after charging finishes deals Fusion DMG.\nMid-air Attack: Chixia consumes Stamina to perform consecutive shots at the target in mid-air, dealing Fusion DMG.\nDodge Counter: Use Basic Attack after a successful Dodge to attack the target, dealing Fusion DMG."
+        },
+        {
+            "name": "Whizzing Fight Spirit",
+            "type": "Resonance Skill",
+            "description": "Chixia unleashes a flurry of shots, dealing Fusion DMG.\nWhizzing Fight Spirit has 2 initial charges."
+        },
+        {
+            "name": "Blazing Flames",
+            "type": "Resonance Liberation",
+            "description": "Chixia fires up fast shots at nearby enemies, dealing Fusion DMG."
+        },
+        {
+            "name": "Heroic Bullets",
+            "type": "Forte Circuit",
+            "description": "Resonance Skill: DAKA DAKA!: Hold Resonance Skill Whizzing Fight Spirit to enter DAKA DAKA!. In this state: Chixia continuously consumes \"Thermobaric Bullets\" to attack the target, dealing Fusion DMG, considered as Resonance Skill damage; Tap Basic Attack to cast Basic Attack 4, dealing Fusion DMG, considered as Basic Attack damage. Then she terminates \"DAKA DAKA!\";\n• If 30 \"Thermobaric Bullets\" have been fired when Basic Attack is activated, Chixia will cast Resonance Skill Boom Boom and terminate \"DAKA DAKA!\" Chixia terminates \"DAKA DAKA!\" when all \"Thermobaric Bullets\" are consumed.\nResonance Skill: Boom Boom: Chixia deals Fusion DMG, considered as Resonance Skill damage.\nThermobaric Bullets: Chixia can hold up to 60 \"Thermobaric Bullets\". Inherent Skill Scorching Magazine increases Max \"Thermobaric Bullets\" by 10. Chixia obtains \"Thermobaric Bullets\" for every Normal Attack POW POW on hit. Chixia obtains \"Thermobaric Bullets\" upon casting Intro Skill Grand Entrance and Resonance Skill Whizzing Fight Spirit."
+        },
+        {
+            "name": "Scorching Magazine",
+            "type": "Inherent Skill",
+            "description": "Max \"Thermobaric Bullets\" is increased by 10 rounds. The damage of Resonance Skill Boom Boom is increased by 50%."
+        },
+        {
+            "name": "Numbingly Spicy!",
+            "type": "Inherent Skill",
+            "description": "Each \"Thermobaric Bullets\" that hits a target during Resonance Skill DAKA DAKA! increases ATK by 1% for 10s, stacking up to 30 times."
+        },
+        {
+            "name": "Grand Entrance",
+            "type": "Intro Skill",
+            "description": "Chixia makes a heroic entrance and fires rapidly with her dual pistol at the target, dealing Fusion DMG."
+        },
+        {
+            "name": "Leaping Flames",
+            "type": "Outro Skill",
+            "description": "Chixia releases a shock wave surrounding the target, dealing Fusion DMG equal to 530.00% of Chixia's ATK to enemies within the range."
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/8/87/Chixia_Full_Sprite.png/revision/latest?cb=20240202080517",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/0/0a/ChixiaCard.jpg/revision/latest/scale-to-width-down/1000?cb=20240125100940",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/b/b9/Chixia_Icon.png/revision/latest?cb=20240523010958"
+    }
+}

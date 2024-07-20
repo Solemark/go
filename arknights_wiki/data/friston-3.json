@@ -1,0 +1,17 @@
+{
+    "name": "Friston-3",
+    "class": "Defender",
+    "subclass": "Normal / Protector",
+    "trait": "Blocks 3 enemies and ignores Deployment Limit, but has a long Redeployment Time ",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Persevere",
+            "desc": "For 10 seconds after deployment, friendly units on surrounding tiles take less damage "
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+        "When this Operator is assigned to a Power Plant, if Kal'tsit is assigned to the Control Center, increases the drone recovery rate by +5%"
+    ]
+}

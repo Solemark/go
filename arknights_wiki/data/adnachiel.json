@@ -1,0 +1,26 @@
+{
+    "name": "Adnachiel",
+    "class": "Sniper",
+    "subclass": "Anti-Air / Marksman",
+    "trait": "Attacks aerial enemies first",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Shortcoming Breakthrough",
+            "desc": "+ASPD; Attacks ranged enemies first"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +20%",
+        "When this Operator is assigned to the Workshop to process any material, the production rate of byproduct increases by 50%"
+    ]
+}

@@ -6,13 +6,15 @@ import (
 	"net/http"
 )
 
-func errorHandler(w http.ResponseWriter, message string) {
-	o, e := json.Marshal(message)
-	CheckAndLogError(e)
+func errorHandler(w http.ResponseWriter, e error) {
+	if e != nil {
+		o, e := json.Marshal(e)
+		CheckAndLogError(e)
 
-	w.Header().Set("Content-Type", "application/json")
-	w.WriteHeader(http.StatusNotFound)
-	w.Write(o)
+		w.Header().Set("Content-Type", "application/json")
+		w.WriteHeader(http.StatusNotFound)
+		w.Write(o)
+	}
 }
 
 func CheckAndLogError(e error) {

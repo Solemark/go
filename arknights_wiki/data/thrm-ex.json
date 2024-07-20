@@ -1,0 +1,17 @@
+{
+    "name": "THRM-EX",
+    "class": "Specialist",
+    "subclass": "Fast-Redeploy / Executor",
+    "trait": "Does not attack and ignores the Deployment Limit, but has a long Redeployment Time",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Delayed Detonation",
+            "desc": "3 seconds after deployment, inflicts 400% ATK as Physical damage to enemies in the nearby 8 tiles and applies 30% Fragile effect for 8 seconds, then automatically retreats from battle"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+        "When this Operator is assigned to a Power Plant, reduces the Morale consumed each hour by -0.52"
+    ]
+}

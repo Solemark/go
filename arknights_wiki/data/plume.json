@@ -1,0 +1,26 @@
+{
+    "name": "Plume",
+    "class": "Vanguard",
+    "subclass": "DP-On-Kill / Charger",
+    "trait": "Obtain 1 DP after this unit defeats an enemy; Refunds the original DP Cost when retreated",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "ATK UP",
+            "desc": "+ATK%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "gain ATK; gain ASPD"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to be the Trainer in the Training Room, Vanguard Operators' Specialization training speed +30%",
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +10% and the order limit +2"
+    ]
+}

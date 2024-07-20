@@ -1,0 +1,58 @@
+{
+    "name": "",
+    "title": "",
+    "element": "",
+    "weapon": "",
+    "nation": "",
+    "affiliation": "",
+    "rarity": 0,
+    "birthday": "d/m",
+    "description": "",
+    "skills": [
+        {
+            "name": "",
+            "type": "Basic Attack",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Liberation",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Forte Circuit",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Intro Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Outro Skill",
+            "description": ""
+        }
+    ],
+    "images": {
+        "art": "",
+        "card": "",
+        "portrait": ""
+    }
+}

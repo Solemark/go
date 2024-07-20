@@ -7,12 +7,12 @@ import (
 
 /*Find an employee and display them*/
 func searchEmployee(employees []employee.Employee) {
-	var input string
+	input := ""
 
 	fmt.Print("Enter employee name to search: ")
 	fmt.Scanln(&input)
 	for _, employee := range employees {
-		if input == employee.GetName() {
+		if input == employee.Name {
 			fmt.Println("Found employee: ", employee)
 			return
 		}

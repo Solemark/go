@@ -1,0 +1,9 @@
+{
+    "name": "Emerald of Genesis",
+    "type": "Sword",
+    "rarity": 5,
+    "stat": "Crit Rate",
+    "description": "Designed after ginkgo leaves, this sword deviates from the typical curved design of its kind. Instead, it features a straight blade with a radiant sheen, hence its name.",
+    "effect": "Stormy Resolution: Energy Regen is increased by a percentage. When Resonance Skill hits a target, ATK is increased by a percentage. This effect can stack up to 2 time(s) and lasts for 10s.",
+    "image": "https://static.wikia.nocookie.net/wutheringwaves/images/d/d8/Weapon_Emerald_of_Genesis.png/revision/latest?cb=20240514220335"
+}

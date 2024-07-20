@@ -1,0 +1,17 @@
+{
+    "name": "Durin",
+    "class": "Caster",
+    "subclass": "ST / Core Caster",
+    "trait": "Deals Arts damage",
+    "rarity": 2,
+    "talent": [
+        {
+            "name": "Lucky Lass",
+            "desc": "50% Arts Dodge"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Dormitory, self Morale recovered per hour -0.1, but restores +0.2 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)",
+        "When this Operator is assigned to a Dormitory, self Morale recovered per hour -0.1, but restores +0.25 Morale per hour to all Operators assigned to that Dormitory (Only the strongest effect of this type takes place)"
+    ]
+}

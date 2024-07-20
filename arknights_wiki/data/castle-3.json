@@ -1,0 +1,17 @@
+{
+    "name": "Castle-3",
+    "class": "Guard",
+    "subclass": "Duelist / Dreadnought",
+    "trait": "Blocks 1 enemy and ignores the Deployment Limit, but has a long Redeployment Time",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Tactical Configuration",
+            "desc": "Increases the ATK and DEF of all [Melee] allies for 10 seconds after deployment"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+        "When this Operator is assigned to a Factory, Battle Record formula related productivity +30%"
+    ]
+}

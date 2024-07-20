@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/styles/style">
+    <script defer src="scripts/customnav"></script>
+    <title>AOW - Login</title>
+</head>
+
+<body>
+    <custom-nav></custom-nav>
+    <div>
+        <h2>Login Page</h2>
+        <form action="/auth/login" method="POST">
+            <div>
+                <div>
+                    <table>
+                        <tr>
+                            <td class="left-col"><span>Username:</span></td>
+                            <td><input class="text-box" type="text" id="Username" name="Username" placeholder="Username"
+                                    required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-col"><span>Password:</span></td>
+                            <td><input class="text-box" type="password" id="Password" name="Password"
+                                    placeholder="Password" required>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <button class="redButton" type="button" onclick="clearModal()">Cancel</button>
+                    <button class="blueButton" type="submit">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

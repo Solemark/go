@@ -1,0 +1,17 @@
+{
+    "name": "Rangers",
+    "class": "Sniper",
+    "subclass": "Anti-Air / Marksman",
+    "trait": " Attacks aerial enemies first",
+    "rarity": 2,
+    "talent": [
+        {
+            "name": "Anti-Air Master",
+            "desc": "ATK +50% when attacking aerial targets"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to the HR Office, HR contacting speed +20%",
+        "When this Operator is assigned to the Workshop to process any material, the production rate of byproduct increases by 60%"
+    ]
+}

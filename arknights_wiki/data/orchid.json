@@ -1,0 +1,26 @@
+{
+    "name": "Orchid",
+    "class": "Supporter",
+    "subclass": "Slower / Decel Binder",
+    "trait": "Deals Arts damage and Slow the target for a short time",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Casting Speed Up",
+            "desc": "+ASPD"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%; +ASPD"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to the HR Office, HR contacting speed +40%",
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +25% and the order limit +1"
+    ]
+}

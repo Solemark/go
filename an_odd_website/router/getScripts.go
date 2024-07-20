@@ -7,14 +7,11 @@ import (
 )
 
 func GetScripts(w http.ResponseWriter, r *http.Request) {
-	script := r.PathValue("script")
-	file, err := os.ReadFile(fmt.Sprintf("static/scripts/%s.js", script))
-	if err != nil {
-		errorHandler(w, "Error! Script not found!")
-		return
-	}
+	s := r.PathValue("script")
+	f, e := os.ReadFile(fmt.Sprintf("static/scripts/%s.js", s))
+	errorHandler(w, e)
 
 	w.Header().Set("Content-Type", "text/javascript")
 	w.WriteHeader(http.StatusOK)
-	w.Write(file)
+	w.Write(f)
 }

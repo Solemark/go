@@ -1,0 +1,9 @@
+{
+    "name": "Cosmic Ripples",
+    "type": "Rectifier",
+    "rarity": 5,
+    "stat": "ATK%",
+    "description": "Designed after ginkgo leaves, this rectifier generates smooth and stable waveforms, making it reliable for a wide range of combat situations.",
+    "effect": "Stormy Resolution: Energy Regen is increased by a percentage. When Basic Attack hits a target, Basic Attack Damage is increased by a percentage. This effect can stack up to 5 times and last for 8s.",
+    "image": "https://static.wikia.nocookie.net/wutheringwaves/images/3/38/Weapon_Cosmic_Ripples.png/revision/latest?cb=20240515174847"
+}

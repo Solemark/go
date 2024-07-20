@@ -1,0 +1,26 @@
+{
+    "name": "Popukar",
+    "class": "Guard",
+    "subclass": "AoE / Centurion",
+    "trait": "Attacks all blocked enemies [This in-game description is inaccurate. This Operator does not need enemies to be blocked to hit them, they just need to be in range. This Operator hits multiple targets equal to their block number.] ",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "HP Up",
+            "desc": "+HP%; +ATK%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Factory, productivity +25%, capacity limit -12, and Morale consumed per hour +0.25",
+        "When this Operator is assigned to a Dormitory, restores +0.4 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.2"
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Cardigan",
+    "class": "Defender",
+    "subclass": "Normal / Protector",
+    "trait": "Blocks 3 enemies ",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Max HP UP",
+            "desc": "Gain max HP%"
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "Restores HP for a percentage of Max HP"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Factory, capacity limit +6 and productivity +10%",
+        "When this Operator is assigned to a Dormitory, restores +0.2 Morale per hour to another Operator assigned to that Dormitory whose Morale is not full (Only the strongest effect of this type takes place); furthermore, self Morale recovered per hour +0.4"
+    ]
+}

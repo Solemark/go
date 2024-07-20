@@ -1,0 +1,17 @@
+{
+    "name": "Terra Research Commission",
+    "class": "Sniper",
+    "subclass": "Aftershock / Flinger",
+    "trait": "Attacks deal Physical Damage twice to ground enemies in a small radius (second time is an aftershock dealing half ATK in damage), and ignores the Deployment Limit, but has a long Redeployment Time",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Felyne Lottery Bomb",
+            "desc": "Attacks detonate after a delay, with one of the following random effects: Deal Physical Damage / Puts the target to Sleep / Stun the target / Nothing happens at all! Talent deactivates after triggering Damage effect 3 times "
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +5%, order limit +2, plus an additional order acquisition efficiency +3% for every Felvine",
+        "When this Operator is assigned to a Factory, capacity limit +8, Productivity +5%, plus an additional Productivity +1% for every Felvine"
+    ]
+}

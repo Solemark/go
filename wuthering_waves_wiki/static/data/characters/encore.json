@@ -1,0 +1,58 @@
+{
+    "name": "Encore",
+    "title": "Wooly–counting Game",
+    "element": "Fusion",
+    "weapon": "Rectifier",
+    "nation": "New Federation",
+    "affiliation": "Black Shores",
+    "rarity": 5,
+    "birthday": "21/03",
+    "description": "She is from the New Federation and is a Consultant of the Black Shores.",
+    "skills": [
+        {
+            "name": "",
+            "type": "Basic Attack",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Resonance Liberation",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Forte Circuit",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Inherent Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Intro Skill",
+            "description": ""
+        },
+        {
+            "name": "",
+            "type": "Outro Skill",
+            "description": ""
+        }
+    ],
+    "images": {
+        "art": "https://static.wikia.nocookie.net/wutheringwaves/images/4/4b/EncoreModel.png/revision/latest?cb=20240421223946",
+        "card": "https://static.wikia.nocookie.net/wutheringwaves/images/a/ab/Encore%27s_Card.jpg/revision/latest/scale-to-width-down/1000?cb=20240511130908",
+        "portrait": "https://static.wikia.nocookie.net/wutheringwaves/images/6/64/Encore_Icon.png/revision/latest?cb=20240523015109"
+    }
+}

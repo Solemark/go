@@ -1,0 +1,17 @@
+{
+    "name": "Noir Corne",
+    "class": "Defender",
+    "subclass": "Normal / Protector",
+    "trait": "Blocks 3 enemies",
+    "rarity": 2,
+    "talent": [
+        {
+            "name": "Improved Armor",
+            "desc": "Max HP and DEF +12% "
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Factory, capacity limit +10 and productivity +10%",
+        "When this Operator is assigned to a Trading Post, order acquisition efficiency +10% and the order limit +2"
+    ]
+}

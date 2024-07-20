@@ -7,14 +7,11 @@ import (
 )
 
 func GetStyles(w http.ResponseWriter, r *http.Request) {
-	style := r.PathValue("style")
-	file, err := os.ReadFile(fmt.Sprintf("static/styles/%s.css", style))
-	if err != nil {
-		errorHandler(w, "Error! Style not found!")
-		return
-	}
+	s := r.PathValue("style")
+	f, e := os.ReadFile(fmt.Sprintf("static/styles/%s.css", s))
+	errorHandler(w, e)
 
 	w.Header().Set("Content-Type", "text/css")
 	w.WriteHeader(http.StatusOK)
-	w.Write(file)
+	w.Write(f)
 }

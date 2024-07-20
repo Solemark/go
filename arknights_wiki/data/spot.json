@@ -1,0 +1,26 @@
+{
+    "name": "Spot",
+    "class": "Defender",
+    "subclass": "Healing / Guardian",
+    "trait": "Can heal allies by using skill(s)",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Smoke Installation",
+            "desc": "Heals an ally and then provides percentage Physical Dodge for 3 seconds "
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ATK%; Stops attacking and focuses on healing surrounding allies. This Skill modifies the Attack Interval by 1.3"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to the Workshop to process any material, the production rate of byproduct increases by 50%",
+        "When this Operator is assigned to a Factory, Precious Metal formula related productivity +30%"
+    ]
+}

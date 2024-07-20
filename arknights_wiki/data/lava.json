@@ -1,0 +1,26 @@
+{
+    "name": "Lava",
+    "class": "Caster",
+    "subclass": "AoE / Splash Caster",
+    "trait": "Deals AOE Arts damage",
+    "rarity": 3,
+    "talent": [
+        {
+            "name": "Quick Skill Usage",
+            "desc": "Immediately obtains Skill Points after deployment "
+        }
+    ],
+    "skills": [
+        [
+            {
+                "chrg": "per second",
+                "act": "manual",
+                "desc": "+ASPD"
+            }
+        ]
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+        "When this Operator is assigned to a Factory, Originium formula related productivity +35%"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Justice Knight",
+    "class": "Sniper",
+    "subclass": "Anti-Air / Marksman",
+    "trait": "Attacks aerial enemies first and ignores Deployment Limit, but has a long Redeployment Time",
+    "rarity": 1,
+    "talent": [
+        {
+            "name": "Justice Drive",
+            "desc": "For a time after deployment, all ranged allied units within Attack Range become less likely to be attacked and apply Fragile effect to aerial enemies"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to a Power Plant, increases the drone recovery rate by +10%",
+        "When this Operator is assigned to a Power Plant, increases the productivity of the Factory Wild Mane is assigned to by +5%"
+    ]
+}

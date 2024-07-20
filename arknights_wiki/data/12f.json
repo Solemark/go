@@ -1,0 +1,17 @@
+{
+    "name": "12F",
+    "class": "Caster",
+    "subclass": "AoE / Splash Caster",
+    "trait": "Deals AOE Arts damage",
+    "rarity": 2,
+    "talent": [
+        {
+            "name": "Dodge Rate Up",
+            "desc": "50% Physical Dodge"
+        }
+    ],
+    "base skill": [
+        "When this Operator is assigned to the Reception Room, Clue search speed increases by 20%",
+        "When this Operator is assigned to the Workshop to process Chips, the production rate of byproduct increases by 70%"
+    ]
+}
